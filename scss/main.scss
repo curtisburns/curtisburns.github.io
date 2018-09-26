@@ -1,20 +1,170 @@
 $primary-color: #333;
-$primary-background-color: #eee;
+$primary-background-color: #FFF;
+$header-font-family: 'Big Casion';
+$content-font-family: 'Gulim';
+$content-letter-spacing: .3em;
 
 @import "./partials/nav";
 
 body {
   background: $primary-background-color;
-  color: $primary-color;
+  position: relative;
+  margin: 0;
 
-  h2 {
-    color: blue;
+}
+
+#header {
+  background: $primary-background-color;
+  position: relative;
+
+  .main-image-bg {
+    position: relative;
+    display: inline-block;
+    padding: 0 calc(20px + 3vw);
+    background: #A4BAB9;
+    width: auto;
+    margin-left: 8vw;
+    padding-bottom: 200px;
+    box-shadow: 14px 7px 20px #97979788;
+
+    img {
+      height: 100vh;
+      opacity: .85;
+    }
+
+    .header-text {
+      position: absolute;
+      background: rgba(66,66,66,.5);
+      top: 33vh;
+      right: 4%;
+      transform: translateX(50%);
+      width: 220px;
+      height: 40vh;
+
+
+      .first-name {
+        font-size: calc(35px + 3vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        margin: 0;
+        position: absolute;
+        left: 15%;
+      }
+
+      .surname {
+        font-size: calc(35px + 3vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        position: absolute;
+        left: -30%;
+        top: 20%;;
+        margin: 0;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: calc(15px + 1vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        transform: translate(-10%, -40%);
+        letter-spacing: .4em;
+        white-space: nowrap;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+      }
+
+    }
   }
 
-  .jump-to-top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+
+}
+
+#about, #projects, #skills {
+  background: $primary-background-color;
+}
+
+
+#contact {
+  height: 300px;
+  margin-top: -150px;
+  position: relative;
+  padding: 0 24% 0 16%;
+
+  .contact-panel {
+    position: relative;
+    font-family: $content-font-family;
+    padding: 2em;
+    display: inline-block;
+    z-index: 4;
+    background: $primary-background-color;
+    width: 100%;
+    box-shadow: 14px 10px 20px #97979788;
+
+    h5 {
+      margin: 0;
+      letter-spacing: .3em;
+      position: relative;
+
+      .line-1 {
+        width: 5%;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 50%;
+        margin-left: 10px;
+      }
+    }
+
+    .line-2 {
+      width: 5%;
+      height: 1px;
+      background: black;
+      position: absolute;
+      top: 80%;
+      right: 0;
+      transform: rotate(270deg);
+    }
+
+    .contact-info {
+      font-size: .8em;
+      letter-spacing: $content-letter-spacing;
+      width: 100%;
+      position: relative;
+
+      .linkedIn {
+        display: block;
+        text-align: right;
+        padding-right: 5vw;
+        margin-top: 2em;
+        margin-bottom: 4em;
+      }
+
+      .email {
+        display: block;
+        padding-left: 5vw;
+        margin-bottom: 3em;
+      }
+
+      a {
+
+        img {
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+
+    }
   }
+}
+
+#about {
+}
+
+#projects {
+
+}
+
+#skills {
 
 }
