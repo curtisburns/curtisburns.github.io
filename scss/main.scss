@@ -79,18 +79,16 @@ body {
 
 }
 
-#about, #projects, #skills {
-  background: $primary-background-color;
-}
 
 
 #contact {
-  height: 300px;
-  margin-top: -150px;
+  height: auto;
+  margin-top: -100px;
   position: relative;
-  padding: 0 24% 0 16%;
+  padding: 0 20% 0 16%;
 
   .contact-panel {
+    box-sizing: border-box;
     position: relative;
     font-family: $content-font-family;
     padding: 2em;
@@ -158,11 +156,213 @@ body {
 }
 
 #about {
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 400px;
+  position: relative;
+  padding: 0 20% 0 16%;
+
+  .about-bg {
+    position: absolute;
+    right: 16%;
+    top: -30%;
+    background: #A4BAB9;
+    height: 200%;
+    width: 40vw;
+    box-shadow: 14px 10px 20px #97979788;
+
+    // Quote
+
+    p {
+      font-size: calc(18px + 1.3vw);
+      position: absolute;
+    }
+
+    p:first-child {
+      bottom: 15%;
+      left: -40%;
+      white-space: nowrap;
+    }
+
+    p:last-child {
+      bottom: 8%;
+      left: -26%;
+      white-space: nowrap;
+    }
+  }
+
+    .about-panel {
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+      background: $primary-background-color;
+      font-family: $content-font-family;
+      line-height: 1.38em;
+      padding: 7em 3em;
+      z-index: 4;
+      background: $primary-background-color;
+      width: 100%;
+      box-shadow: 14px 10px 20px #97979788;
+
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        font-weight: 100;
+        font-size: calc(12px + .5vw);
+        text-align: center;
+        position: relative;
+        margin-bottom: 2em;
+
+        .line {
+          width: 16vw;
+          height: 1px;
+          background: black;
+          position: absolute;
+          top: 50%;
+        }
+
+      }
+
+      p {
+        text-align: justify;
+        letter-spacing: .1em;
+        line-height: 1.8em;
+        font-size: .9em;
+      }
+    }
+
 }
 
 #projects {
+  height: auto;
+  margin-bottom: 400px;
+  position: relative;
+  padding: 80px 16% 0 10%;
+  font-family: $content-font-family;
 
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: 100;
+    font-size: calc(12px + .5vw);
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 8%;
+
+    .line {
+      width: 16vw;;
+      height: 1px;
+      background: black;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  .project-styling-1, .project-styling-2 {
+    display: flex;
+    flex-flow: row wrap;
+
+    .image-column {
+      display: inline-block;
+      flex: auto;
+      width: calc(300px + 20%);
+      position: relative;
+      z-index: 2;
+
+
+      img {
+        width: 110%;
+        box-shadow: 14px 12px 20px #97979788;
+
+        //Needs media query for 100%
+
+      }
+    }
+    .text-column {
+      display: inline-block;
+      flex: auto;
+      width: calc(250px + 20%);
+      position: relative;
+      z-index: 1;
+
+      .text-panel {
+        box-sizing: border-box;
+        box-shadow: 14px 12px 20px #97979788;
+        background: $primary-background-color;
+        padding: 3em 3em 3em 5em;
+        transform: translateY(-50px);
+        min-height: 450px;
+
+        p {
+          line-height: 1.4em;
+          font-size: .9em;
+        }
+      }
+    }
+
+    .project-links {
+      width: 100%;
+      height: 300px;
+      flex: auto;
+      margin-top: -105px;
+
+      .links-container {
+        margin: auto;
+        width: 28%;
+        height: 50%;
+        background: #A4BAB9;
+        position: relative;
+
+        .line {
+          width: 5vw;
+          height: 1px;
+          background: white;
+          position: absolute;
+          bottom: 15%;
+        }
+        .line {
+          right: 10%;
+        }
+
+        .line:first-child {
+          left: 10%;
+        }
+
+
+        .link-icon {
+          position: absolute;
+          right: 40%;
+          bottom: 10%;
+        }
+        .github-icon {
+          position: absolute;
+          left: 40%;
+          bottom: 10%;
+        }
+      }
+    }
+
+  }
+
+  .project-styling-2 {
+    img {
+      position: absolute;
+      right: 0;
+    }
+    .text-column {
+      .text-panel {
+        padding: 3em 5em 3em 3em;
+      }
+    }
+
+    .project-links {
+      margin-top: -100px;
+    }
+  }
 }
+
+
 
 #skills {
 

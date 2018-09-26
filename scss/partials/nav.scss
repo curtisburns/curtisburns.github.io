@@ -34,7 +34,7 @@ nav {
         color: black;
         font-family: $content-font-family;
         text-transform: uppercase;
-        font-size: .8em;
+        font-size: calc(8px + .8vh);
       }
     }
 
@@ -44,7 +44,7 @@ nav {
       width: 10px;
       position: absolute;
       left: 0vh;
-      transform: translate(-40%, -45%);
+      transform: translate(-40%, 45%);
     }
 
     .line-1, .line-2 {
