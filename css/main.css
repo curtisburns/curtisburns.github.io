@@ -64,7 +64,6 @@ body {
       opacity: .85; }
     #header .main-image-bg .header-text {
       position: absolute;
-      background: rgba(66, 66, 66, 0.5);
       top: 33vh;
       right: 4%;
       transform: translateX(50%);
