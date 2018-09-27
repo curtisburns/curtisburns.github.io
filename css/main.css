@@ -496,36 +496,30 @@ nav {
           transform: translateX(0%); } }
     #projects .project-styling-2 .columns-container .image-column img.gif-1 {
       position: absolute;
-      bottom: 60%;
-      -webkit-transform: rotate(-30deg) translate(-10%, -5%);
-      -ms-transform: rotate(-30deg) translate(-10%, -5%);
-      -moz-transform: rotate(-30deg) translate(-10%, -5%);
-      transform: rotate(-30deg) translate(-10%, -5%);
+      bottom: 61%;
+      -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      transform: rotate(-30deg);
       width: 38%;
       box-shadow: -4px 6px 9px #00000050; }
       @media only screen and (max-width: 1240px) {
         #projects .project-styling-2 .columns-container .image-column img.gif-1 {
           width: 34%;
-          -webkit-transform: rotate(-30deg) translate(15%, 5%);
-          -ms-transform: rotate(-30deg) translate(15%, 5%);
-          -moz-transform: rotate(-30deg) translate(15%, 5%);
-          transform: rotate(-30deg) translate(15%, 5%); } }
+          right: 60%; } }
     #projects .project-styling-2 .columns-container .image-column img.gif-2 {
       position: absolute;
-      bottom: 60%;
-      -webkit-transform: rotate(-30deg) translate(-30%, 90%);
-      -ms-transform: rotate(-30deg) translate(-30%, 90%);
-      -moz-transform: rotate(-30deg) translate(-30%, 90%);
-      transform: rotate(-30deg) translate(-30%, 90%);
+      bottom: 20%;
+      -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      transform: rotate(-30deg);
       width: 60%;
       box-shadow: -4px 6px 9px #00000050; }
       @media only screen and (max-width: 1240px) {
         #projects .project-styling-2 .columns-container .image-column img.gif-2 {
           width: 56%;
-          -webkit-transform: rotate(-30deg) translate(-13%, 95%);
-          -ms-transform: rotate(-30deg) translate(-13%, 95%);
-          -moz-transform: rotate(-30deg) translate(-13%, 95%);
-          transform: rotate(-30deg) translate(-13%, 95%); } }
+          right: 34%; } }
     #projects .project-styling-2 .columns-container .image-column div.overlay {
       height: 99.5%;
       right: 0; }

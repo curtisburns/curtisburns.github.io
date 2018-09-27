@@ -232,26 +232,27 @@
 
         img.gif-1 {
           position: absolute;
-          bottom: 60%;
-          @include transform(rotate(-30deg) translate(-10%, -5%));
+          bottom: 61%;
+          @include transform(rotate(-30deg));
           width: 38%;
           box-shadow: -4px 6px 9px #00000050;
           @media only screen and (max-width: 1240px) {
             width: 34%;
-            @include transform(rotate(-30deg) translate(15%, 5%));
+            right: 60%;
           }
         }
 
         img.gif-2 {
           position: absolute;
-          bottom: 60%;
-          @include transform(rotate(-30deg) translate(-30%, 90%));
+          bottom: 20%;
+          @include transform(rotate(-30deg));
           width: 60%;
           box-shadow: -4px 6px 9px #00000050;
 
           @media only screen and (max-width: 1240px) {
             width: 56%;
-            @include transform(rotate(-30deg) translate(-13%, 95%));
+            right: 34%;
+
           }
         }
 
