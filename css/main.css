@@ -23,7 +23,7 @@ nav {
       nav ul li a {
         text-decoration: none;
         color: black;
-        font-family: "Gulim";
+        font-family: "Raleway";
         text-transform: uppercase;
         font-size: calc(8px + .8vh); }
     nav ul .black-box {
@@ -191,7 +191,7 @@ nav {
             width: 9vw;
             background: white; } }
       #header .main-image-bg .graduation p {
-        font-family: "Gulim";
+        font-family: "Raleway";
         letter-spacing: .3em;
         font-size: .7em; }
       #header .main-image-bg .graduation p.date {
@@ -211,7 +211,7 @@ nav {
   #contact .contact-panel {
     box-sizing: border-box;
     position: relative;
-    font-family: "Gulim";
+    font-family: "Raleway";
     padding: 2em;
     display: inline-block;
     z-index: 4;
@@ -385,7 +385,7 @@ nav {
     position: relative;
     z-index: 2;
     background: #FFF;
-    font-family: "Gulim";
+    font-family: "Raleway";
     line-height: 1.38em;
     padding: 7em 6em;
     z-index: 4;
@@ -424,7 +424,7 @@ nav {
   height: auto;
   position: relative;
   padding: 100px 16% 0 10%;
-  font-family: "Gulim"; }
+  font-family: "Raleway"; }
   #projects h2 {
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -486,7 +486,7 @@ nav {
             visibility: visible; } }
         #projects .project-styling-1 .columns-container .image-column .overlay p, #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay p, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           color: white;
-          font-family: "Gulim";
+          font-family: "Raleway";
           letter-spacing: .3em; }
         #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           text-transform: uppercase;
@@ -643,7 +643,7 @@ nav {
   margin-bottom: 40px;
   position: relative;
   padding: 15px 30% 0 20%;
-  font-family: "Gulim"; }
+  font-family: "Raleway"; }
   @media only screen and (max-width: 768px) {
     #skills {
       padding: 15px 23% 0 16%; } }
@@ -727,7 +727,7 @@ nav {
           padding-inline-start: 0;
           margin-top: 8px; }
           #skills .skills-columns .technologies-column .technologies-panel ul li {
-            font-family: "Gulim";
+            font-family: "Raleway";
             margin: 8px 0;
             list-style: none;
             font-size: calc(.2em + .8vw); }
@@ -766,7 +766,7 @@ nav {
           margin-bottom: 0px; }
           #skills .skills-columns .methodology-column .methodology-panel ul li {
             color: white;
-            font-family: "Gulim";
+            font-family: "Raleway";
             margin: 8px 0;
             list-style: none;
             font-size: calc(.3em + .8vw);
