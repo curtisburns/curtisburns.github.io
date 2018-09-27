@@ -246,7 +246,7 @@ nav {
       @media only screen and (max-width: 1240px) {
         #contact .contact-panel .line-2 {
           right: 4%; } }
-      @media only screen and (max-width: 1240px) {
+      @media only screen and (max-width: 415px) {
         #contact .contact-panel .line-2 {
           width: 20%;
           right: -1%; } }
@@ -261,6 +261,8 @@ nav {
         padding-right: 5vw;
         margin-top: 2em;
         margin-bottom: 4em; }
+        #contact .contact-panel .contact-info .linkedIn img {
+          width: 25px; }
         @media only screen and (max-width: 1240px) {
           #contact .contact-panel .contact-info .linkedIn {
             margin-top: 3em; } }
@@ -292,6 +294,7 @@ nav {
         text-decoration: none;
         color: black; }
         #contact .contact-panel .contact-info a img {
+          width: 25px;
           vertical-align: middle;
           margin-right: 10px; }
 

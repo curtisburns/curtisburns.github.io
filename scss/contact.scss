@@ -52,7 +52,7 @@
         right: 4%;
       }
 
-      @media only screen and (max-width: 1240px) {
+      @media only screen and (max-width: 415px) {
         width: 20%;
         right: -1%;
       }
@@ -70,6 +70,10 @@
         padding-right: 5vw;
         margin-top: 2em;
         margin-bottom: 4em;
+
+        img {
+          width: 25px;
+        }
 
         @media only screen and (max-width: 1240px) {
           margin-top: 3em;
@@ -115,6 +119,7 @@
         color: black;
 
         img {
+          width: 25px;
           vertical-align: middle;
           margin-right: 10px;
         }
