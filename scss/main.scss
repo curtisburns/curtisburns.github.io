@@ -28,3 +28,9 @@ body {
   margin: 0;
 
 }
+
+@media only screen and (max-width: 415px) {
+  #contact, #about, #projects, #skills {
+    padding: 0 13% 0 13%;
+  }
+}

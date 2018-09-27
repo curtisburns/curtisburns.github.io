@@ -32,6 +32,10 @@
         position: absolute;
         top: 50%;
         margin-left: 10px;
+
+        @media only screen and (max-width: 1240px) {
+          width: 30%;
+        }
       }
     }
 
@@ -47,10 +51,15 @@
       @media only screen and (max-width: 1240px) {
         right: 4%;
       }
+
+      @media only screen and (max-width: 1240px) {
+        width: 20%;
+        right: -1%;
+      }
     }
 
     .contact-info {
-      font-size: .8em;
+      font-size: calc( 7px + .4vw );
       letter-spacing: $content-letter-spacing;
       width: 100%;
       position: relative;
@@ -65,12 +74,40 @@
         @media only screen and (max-width: 1240px) {
           margin-top: 3em;
         }
+
+        @media only screen and (max-width: 415px) {
+          margin-top: 10em;
+          text-align: center;
+          padding-right: 0;
+
+          img {
+            position: absolute;
+            top: -50%;
+            left: 45%;
+            width: 35px;
+          }
+
+        }
       }
 
       .email {
         display: block;
         padding-left: 5vw;
         margin-bottom: 3em;
+
+        @media only screen and (max-width: 415px) {
+          margin-top: 8em;
+          text-align: center;
+          padding-left: 0;
+
+          img {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            width: 35px;
+          }
+
+        }
       }
 
       a {

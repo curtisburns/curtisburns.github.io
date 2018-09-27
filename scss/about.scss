@@ -9,6 +9,10 @@
     margin-bottom: 180px;
   }
 
+  @media only screen and (max-width: 415px) {
+    margin-bottom: 350px;
+  }
+
   .about-bg {
     position: absolute;
     right: 16%;
@@ -30,6 +34,11 @@
       position: absolute;
       font-family: $header-font-family;
 
+      @media only screen and (max-width: 380px) {
+        font-size: calc(14px + 1vw);
+
+      }
+
     }
 
 
@@ -41,6 +50,19 @@
       @media only screen and (max-width: 1240px) {
         bottom: 10%;
         left: -43%;
+      }
+
+      @media only screen and (max-width: 415px) {
+        bottom: 13%;
+        left: -80%;
+      }
+
+      @media only screen and (max-width: 380px) {
+        left: -66%;
+      }
+
+      @media only screen and (max-width: 350px) {
+        left: -77%;
       }
 
       @media only screen and (min-width: 1580px) {
@@ -62,6 +84,19 @@
       @media only screen and (max-width: 1240px) {
         left: -28%;
         bottom: 4%;
+      }
+
+      @media only screen and (max-width: 415px) {
+        bottom: 10%;
+        left: -51%;
+      }
+
+      @media only screen and (max-width: 380px) {
+        left: -43%;
+      }
+
+      @media only screen and (max-width: 350px) {
+        left: -48%;
       }
 
       @media only screen and (min-width: 1580px) {
@@ -91,6 +126,10 @@
       width: 100%;
       box-shadow: 14px 10px 20px #97979788;
 
+      @media only screen and (max-width: 415px) {
+        padding: 2em .3em;
+      }
+
       h2 {
         text-transform: uppercase;
         letter-spacing: .3em;
@@ -116,6 +155,10 @@
         line-height: 2em;
         font-size: calc(8px + .5vw);
         color: #555;
+        @media only screen and (max-width: 415px) {
+          padding: 2em 2em;
+          font-size: calc(10px + .8vw);
+        }
       }
     }
 

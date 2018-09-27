@@ -4,6 +4,9 @@ nav {
   position: fixed;
   right: 50px;
   z-index: 99;
+  @media only screen and (max-width: 415px) {
+    right: 30px;
+  }
 
   ul {
     transform: rotate(270deg);

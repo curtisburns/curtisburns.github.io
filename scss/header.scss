@@ -1,6 +1,7 @@
 #header {
   background: $primary-background-color;
   position: relative;
+  width: 100%;
 
   .main-image-bg {
     position: relative;
@@ -12,6 +13,11 @@
     padding-bottom: 200px;
     box-shadow: 14px 7px 20px #97979788;
 
+    @media only screen and (max-width: 414px) {
+      margin-left: 2vw;
+      margin-top: 300px;
+    }
+
     @media only screen and (max-width: 1240px) {
       padding-bottom: 100px;
     }
@@ -19,10 +25,18 @@
     img {
       height: 100vh;
       opacity: .85;
+      box-shadow: 14px 7px 20px #97979788;
 
       @media only screen and (max-width: 1240px) {
         height: 72.7vh;
       }
+
+      @media only screen and (max-width: 415px) {
+        height: 50vh;
+        opacity: 1;
+        @include transform(translateY(-10%));
+      }
+
     }
 
     .header-text {
@@ -36,6 +50,11 @@
       @media only screen and (max-width: 1240px) {
           left: 0;
           top: 50%;
+      }
+
+      @media only screen and (max-width: 414px) {
+        top: -53%;
+        left: -5%;
       }
 
       .white-letters {
@@ -55,8 +74,13 @@
         position: absolute;
         left: 11%;
 
+
         @media only screen and (max-width: 1240px) {
             font-size: calc(70px + 3vw);
+        }
+
+        @media only screen and (max-width: 414px) {
+          left: 0%;
         }
 
         @media only screen and (min-width: 1580px) {
@@ -105,9 +129,17 @@
         position: absolute;
         top: 55%;
         left: 20%;
+
         @media only screen and (max-width: 1240px) {
             font-size: calc(30px + 1vw);
         }
+
+        @media only screen and (max-width: 414px) {
+          font-size: calc(20px + 1vw);
+          left: 0%;
+        }
+
+
       }
 
 
@@ -117,9 +149,16 @@
       bottom: 25%;
       right: -50%;
 
+
       @media only screen and (max-width: 1240px) {
         bottom: 30%;
         right: 10%;
+      }
+
+      @media only screen and (max-width: 415px) {
+        color: white;
+        bottom: 13%;
+        right: 20%;
       }
 
       .line {
@@ -129,6 +168,11 @@
         position: absolute;
         top: 70%;
         left: 9%;
+
+        @media only screen and (max-width: 415px) {
+          width: 9vw;
+          background: white;
+        }
       }
       p {
         font-family: $content-font-family;
@@ -138,6 +182,10 @@
 
       p.date {
         padding-left: 8vw;
+
+        @media only screen and (max-width: 415px) {
+          padding-left: 15vw
+        }
       }
     }
 

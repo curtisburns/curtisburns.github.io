@@ -2,6 +2,9 @@ nav {
   position: fixed;
   right: 50px;
   z-index: 99; }
+  @media only screen and (max-width: 415px) {
+    nav {
+      right: 30px; } }
   nav ul {
     transform: rotate(270deg);
     transform-origin: right;
@@ -44,7 +47,8 @@ nav {
 
 #header {
   background: #FFF;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   #header .main-image-bg {
     position: relative;
     display: inline-block;
@@ -54,15 +58,28 @@ nav {
     margin-left: 8vw;
     padding-bottom: 200px;
     box-shadow: 14px 7px 20px #97979788; }
+    @media only screen and (max-width: 414px) {
+      #header .main-image-bg {
+        margin-left: 2vw;
+        margin-top: 300px; } }
     @media only screen and (max-width: 1240px) {
       #header .main-image-bg {
         padding-bottom: 100px; } }
     #header .main-image-bg img {
       height: 100vh;
-      opacity: .85; }
+      opacity: .85;
+      box-shadow: 14px 7px 20px #97979788; }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg img {
           height: 72.7vh; } }
+      @media only screen and (max-width: 415px) {
+        #header .main-image-bg img {
+          height: 50vh;
+          opacity: 1;
+          -webkit-transform: translateY(-10%);
+          -ms-transform: translateY(-10%);
+          -moz-transform: translateY(-10%);
+          transform: translateY(-10%); } }
     #header .main-image-bg .header-text {
       position: absolute;
       top: 33vh;
@@ -77,6 +94,10 @@ nav {
         #header .main-image-bg .header-text {
           left: 0;
           top: 50%; } }
+      @media only screen and (max-width: 414px) {
+        #header .main-image-bg .header-text {
+          top: -53%;
+          left: -5%; } }
       #header .main-image-bg .header-text .white-letters {
         color: white; }
         @media only screen and (max-width: 1240px) {
@@ -92,6 +113,9 @@ nav {
         @media only screen and (max-width: 1240px) {
           #header .main-image-bg .header-text .first-name {
             font-size: calc(70px + 3vw); } }
+        @media only screen and (max-width: 414px) {
+          #header .main-image-bg .header-text .first-name {
+            left: 0%; } }
         @media only screen and (min-width: 1580px) {
           #header .main-image-bg .header-text .first-name {
             left: 8%; } }
@@ -138,6 +162,10 @@ nav {
         @media only screen and (max-width: 1240px) {
           #header .main-image-bg .header-text h3 {
             font-size: calc(30px + 1vw); } }
+        @media only screen and (max-width: 414px) {
+          #header .main-image-bg .header-text h3 {
+            font-size: calc(20px + 1vw);
+            left: 0%; } }
     #header .main-image-bg .graduation {
       position: absolute;
       bottom: 25%;
@@ -146,6 +174,11 @@ nav {
         #header .main-image-bg .graduation {
           bottom: 30%;
           right: 10%; } }
+      @media only screen and (max-width: 415px) {
+        #header .main-image-bg .graduation {
+          color: white;
+          bottom: 13%;
+          right: 20%; } }
       #header .main-image-bg .graduation .line {
         width: 6vw;
         height: 1px;
@@ -153,12 +186,19 @@ nav {
         position: absolute;
         top: 70%;
         left: 9%; }
+        @media only screen and (max-width: 415px) {
+          #header .main-image-bg .graduation .line {
+            width: 9vw;
+            background: white; } }
       #header .main-image-bg .graduation p {
         font-family: "Gulim";
         letter-spacing: .3em;
         font-size: .7em; }
       #header .main-image-bg .graduation p.date {
         padding-left: 8vw; }
+        @media only screen and (max-width: 415px) {
+          #header .main-image-bg .graduation p.date {
+            padding-left: 15vw; } }
 
 #contact {
   height: auto;
@@ -189,6 +229,9 @@ nav {
         position: absolute;
         top: 50%;
         margin-left: 10px; }
+        @media only screen and (max-width: 1240px) {
+          #contact .contact-panel h5 .line-1 {
+            width: 30%; } }
     #contact .contact-panel .line-2 {
       width: 5%;
       height: 1px;
@@ -203,8 +246,12 @@ nav {
       @media only screen and (max-width: 1240px) {
         #contact .contact-panel .line-2 {
           right: 4%; } }
+      @media only screen and (max-width: 1240px) {
+        #contact .contact-panel .line-2 {
+          width: 20%;
+          right: -1%; } }
     #contact .contact-panel .contact-info {
-      font-size: .8em;
+      font-size: calc( 7px + .4vw );
       letter-spacing: 0.3em;
       width: 100%;
       position: relative; }
@@ -217,10 +264,30 @@ nav {
         @media only screen and (max-width: 1240px) {
           #contact .contact-panel .contact-info .linkedIn {
             margin-top: 3em; } }
+        @media only screen and (max-width: 415px) {
+          #contact .contact-panel .contact-info .linkedIn {
+            margin-top: 10em;
+            text-align: center;
+            padding-right: 0; }
+            #contact .contact-panel .contact-info .linkedIn img {
+              position: absolute;
+              top: -50%;
+              left: 45%;
+              width: 35px; } }
       #contact .contact-panel .contact-info .email {
         display: block;
         padding-left: 5vw;
         margin-bottom: 3em; }
+        @media only screen and (max-width: 415px) {
+          #contact .contact-panel .contact-info .email {
+            margin-top: 8em;
+            text-align: center;
+            padding-left: 0; }
+            #contact .contact-panel .contact-info .email img {
+              position: absolute;
+              top: 40%;
+              left: 45%;
+              width: 35px; } }
       #contact .contact-panel .contact-info a {
         text-decoration: none;
         color: black; }
@@ -237,6 +304,9 @@ nav {
   @media only screen and (max-width: 1240px) {
     #about {
       margin-bottom: 180px; } }
+  @media only screen and (max-width: 415px) {
+    #about {
+      margin-bottom: 350px; } }
   #about .about-bg {
     position: absolute;
     right: 16%;
@@ -253,6 +323,9 @@ nav {
       font-size: calc(18px + 1.3vw);
       position: absolute;
       font-family: "Cormorant Garamond", serif; }
+      @media only screen and (max-width: 380px) {
+        #about .about-bg p {
+          font-size: calc(14px + 1vw); } }
     #about .about-bg p:first-child {
       bottom: 15%;
       left: -38%;
@@ -261,6 +334,16 @@ nav {
         #about .about-bg p:first-child {
           bottom: 10%;
           left: -43%; } }
+      @media only screen and (max-width: 415px) {
+        #about .about-bg p:first-child {
+          bottom: 13%;
+          left: -80%; } }
+      @media only screen and (max-width: 380px) {
+        #about .about-bg p:first-child {
+          left: -66%; } }
+      @media only screen and (max-width: 350px) {
+        #about .about-bg p:first-child {
+          left: -77%; } }
       @media only screen and (min-width: 1580px) {
         #about .about-bg p:first-child {
           left: -34%; } }
@@ -278,6 +361,16 @@ nav {
         #about .about-bg p:last-child {
           left: -28%;
           bottom: 4%; } }
+      @media only screen and (max-width: 415px) {
+        #about .about-bg p:last-child {
+          bottom: 10%;
+          left: -51%; } }
+      @media only screen and (max-width: 380px) {
+        #about .about-bg p:last-child {
+          left: -43%; } }
+      @media only screen and (max-width: 350px) {
+        #about .about-bg p:last-child {
+          left: -48%; } }
       @media only screen and (min-width: 1580px) {
         #about .about-bg p:last-child {
           left: -22%; } }
@@ -299,6 +392,9 @@ nav {
     background: #FFF;
     width: 100%;
     box-shadow: 14px 10px 20px #97979788; }
+    @media only screen and (max-width: 415px) {
+      #about .about-panel {
+        padding: 2em .3em; } }
     #about .about-panel h2 {
       text-transform: uppercase;
       letter-spacing: .3em;
@@ -319,6 +415,10 @@ nav {
       line-height: 2em;
       font-size: calc(8px + .5vw);
       color: #555; }
+      @media only screen and (max-width: 415px) {
+        #about .about-panel p {
+          padding: 2em 2em;
+          font-size: calc(10px + .8vw); } }
 
 #projects {
   height: auto;
@@ -648,5 +748,9 @@ body {
   background: #FFF;
   position: relative;
   margin: 0; }
+
+@media only screen and (max-width: 415px) {
+  #contact, #about, #projects, #skills {
+    padding: 0 13% 0 13%; } }
 
 /*# sourceMappingURL=main.css.map */
