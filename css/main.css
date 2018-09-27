@@ -475,6 +475,10 @@ nav {
         position: absolute;
         top: 0;
         text-align: center; }
+        @media only screen and (max-width: 415px) {
+          #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
+            padding: 0 10%;
+            padding-top: 20%; } }
         @media only screen and (max-width: 1240px) {
           #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
             width: 100%;
@@ -524,6 +528,9 @@ nav {
           line-height: 1.8em;
           font-size: .9em;
           color: #555; }
+          @media only screen and (max-width: 415px) {
+            #projects .project-styling-1 .columns-container .text-column .text-panel p, #projects .project-styling-2 .columns-container .text-column .text-panel p {
+              font-size: 4vw; } }
           #projects .project-styling-1 .columns-container .text-column .text-panel p a, #projects .project-styling-2 .columns-container .text-column .text-panel p a {
             text-decoration: none;
             color: black;
@@ -679,10 +686,16 @@ nav {
         #skills .skills-columns .line {
           left: 28%;
           width: 12vh; } }
+      @media only screen and (max-width: 415px) {
+        #skills .skills-columns .line {
+          display: none; } }
     #skills .skills-columns h3 {
       margin: 0;
       margin-top: 10px;
       font-size: 1.2vw; }
+      @media only screen and (max-width: 415px) {
+        #skills .skills-columns h3 {
+          font-size: calc( 1em + .8vw); } }
     #skills .skills-columns .technologies-column {
       flex: auto;
       min-width: 250px; }
@@ -702,6 +715,13 @@ nav {
         -moz-transform: translate(30%, -10%);
         transform: translate(30%, -10%);
         background: white; }
+        @media only screen and (max-width: 415px) {
+          #skills .skills-columns .technologies-column .technologies-panel {
+            width: 100%;
+            -webkit-transform: translate(0%, 0%);
+            -ms-transform: translate(0%, 0%);
+            -moz-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); } }
         #skills .skills-columns .technologies-column .technologies-panel ul {
           display: inline-block;
           padding-inline-start: 0;
@@ -711,6 +731,9 @@ nav {
             margin: 8px 0;
             list-style: none;
             font-size: calc(.2em + .8vw); }
+            @media only screen and (max-width: 415px) {
+              #skills .skills-columns .technologies-column .technologies-panel ul li {
+                font-size: calc( .8em + .8vw); } }
     #skills .skills-columns .methodology-column {
       min-width: 250px;
       flex: auto;
@@ -730,6 +753,13 @@ nav {
         -moz-transform: translateX(-10%);
         transform: translateX(-10%);
         padding: 30px 0; }
+        @media only screen and (max-width: 415px) {
+          #skills .skills-columns .methodology-column .methodology-panel {
+            width: 100%;
+            -webkit-transform: translate(0%, 0%);
+            -ms-transform: translate(0%, 0%);
+            -moz-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); } }
         #skills .skills-columns .methodology-column .methodology-panel ul {
           display: inline-block;
           padding-inline-start: 0;
@@ -741,6 +771,9 @@ nav {
             list-style: none;
             font-size: calc(.3em + .8vw);
             margin-top: 0; }
+            @media only screen and (max-width: 415px) {
+              #skills .skills-columns .methodology-column .methodology-panel ul li {
+                font-size: calc( .8em + .8vw); } }
         #skills .skills-columns .methodology-column .methodology-panel h3 {
           color: white; }
 
@@ -751,6 +784,6 @@ body {
 
 @media only screen and (max-width: 415px) {
   #contact, #about, #projects, #skills {
-    padding: 0 13% 0 13%; } }
+    padding: 0 13% 0 8%; } }
 
 /*# sourceMappingURL=main.css.map */
