@@ -40,7 +40,7 @@
       position: absolute;
       bottom: 14%;
       z-index: 99;
-      @include transform: rotate(270deg);
+      @include transform(rotate(270deg));
       transform-origin: center;
       left: 30%;
 
@@ -68,7 +68,7 @@
         z-index: 1;
         box-sizing: border-box;
         box-shadow: 14px 7px 20px #97979788;
-        @include transform: translate(30%, -10%);
+        @include transform(translate(30%, -10%));
         background: white;
 
         ul {
@@ -100,7 +100,7 @@
         box-sizing: border-box;
         background: #A4BAB9;
         box-shadow: 14px 7px 20px #97979788;
-        @include transform: translateX(-10%);
+        @include transform(translateX(-10%));
         padding: 30px 0;
 
         ul {

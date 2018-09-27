@@ -29,7 +29,7 @@
       position: absolute;
       top: 33vh;
       right: 4%;
-      @include transform: translateX(50%);
+      @include transform(translateX(50%));
       width: 220px;
       height: 40vh;
 
@@ -99,7 +99,7 @@
         font-size: calc(15px + 1vw);
         font-family: $header-font-family;
         font-weight:  100;
-        @include transform: translate(-10%, -40%);
+        @include transform(translate(-10%, -40%));
         letter-spacing: .4em;
         white-space: nowrap;
         position: absolute;

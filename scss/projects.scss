@@ -119,7 +119,7 @@
           box-shadow: 14px 12px 20px #97979788;
           background: $primary-background-color;
           padding: 3em 3em 3em 5em;
-          @include transform: translateY(-50px);
+          @include transform(translateY(-50px));
           min-height: 450px;
           font-size: 1.2vw;
 
@@ -224,34 +224,34 @@
 
       .image-column {
         img:first-child {
-          @include transform: translateX(-9%);
+          @include transform(translateX(-9%));
           @media only screen and (max-width: 1240px) {
-            @include transform: translateX(0%)
+            @include transform(translateX(0%));
           }
         }
 
         img.gif-1 {
           position: absolute;
           bottom: 60%;
-          @include transform: rotate(-30deg) translate(-10%, -5%);
+          @include transform(rotate(-30deg) translate(-10%, -5%));
           width: 38%;
           box-shadow: -4px 6px 9px #00000050;
           @media only screen and (max-width: 1240px) {
             width: 34%;
-            @include transform: rotate(-30deg) translate(15%, 5%);
+            @include transform(rotate(-30deg) translate(15%, 5%));
           }
         }
 
         img.gif-2 {
           position: absolute;
           bottom: 60%;
-          @include transform: rotate(-30deg) translate(-30%, 90%);
+          @include transform(rotate(-30deg) translate(-30%, 90%));
           width: 60%;
           box-shadow: -4px 6px 9px #00000050;
 
           @media only screen and (max-width: 1240px) {
             width: 56%;
-            @include transform: rotate(-30deg) translate(-13%, 95%);
+            @include transform(rotate(-30deg) translate(-13%, 95%));
           }
         }
 
