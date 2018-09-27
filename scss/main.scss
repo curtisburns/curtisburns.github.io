@@ -1,15 +1,22 @@
-$primary-color: #333;
-$primary-background-color: #FFF;
-$header-font-family: 'Cormorant Garamond', serif;
-$content-font-family: 'Gulim';
-$content-letter-spacing: .3em;
-
 @import "./partials/nav";
 @import "./header";
 @import "./contact";
 @import "./about";
 @import "./projects";
 @import "./skills";
+
+$primary-color: #333;
+$primary-background-color: #FFF;
+$header-font-family: 'Cormorant Garamond', serif;
+$content-font-family: 'Gulim';
+$content-letter-spacing: .3em;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
 
 
 body {

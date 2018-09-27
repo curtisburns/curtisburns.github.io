@@ -42,7 +42,7 @@
       position: absolute;
       top: 80%;
       right: 0;
-      transform: rotate(270deg);
+      @include transform: rotate(270deg);
 
       @media only screen and (max-width: 1240px) {
         right: 4%;
