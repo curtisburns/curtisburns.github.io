@@ -1,0 +1,148 @@
+#header {
+  background: $primary-background-color;
+  position: relative;
+
+  .main-image-bg {
+    position: relative;
+    display: inline-block;
+    padding: 0 calc(20px + 3vw);
+    background: #A4BAB9;
+    width: auto;
+    margin-left: 8vw;
+    padding-bottom: 200px;
+    box-shadow: 14px 7px 20px #97979788;
+
+    @media only screen and (max-width: 1240px) {
+      padding-bottom: 100px;
+    }
+
+    img {
+      height: 100vh;
+      opacity: .85;
+
+      @media only screen and (max-width: 1240px) {
+        height: 72.7vh;
+      }
+    }
+
+    .header-text {
+      position: absolute;
+      top: 33vh;
+      right: 4%;
+      transform: translateX(50%);
+      width: 220px;
+      height: 40vh;
+
+      @media only screen and (max-width: 1240px) {
+          left: 0;
+          top: 50%;
+      }
+
+      .white-letters {
+        color: white;
+
+        @media only screen and (max-width: 1240px) {
+            color: black;
+        }
+      }
+
+
+      .first-name {
+        font-size: calc(35px + 3vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        margin: 0;
+        position: absolute;
+        left: 11%;
+
+        @media only screen and (max-width: 1240px) {
+            font-size: calc(70px + 3vw);
+        }
+
+        @media only screen and (min-width: 1580px) {
+            left: 8%;
+        }
+        @media only screen and (min-width: 1780px) {
+            left: 3%;
+        }
+        @media only screen and (min-width: 2100px) {
+            left: -6%;
+        }
+      }
+
+      .surname {
+        font-size: calc(35px + 3vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        position: absolute;
+        left: -30%;
+        top: 20%;;
+        margin: 0;
+
+        @media only screen and (max-width: 1240px) {
+            font-size: calc(70px + 3vw);
+        }
+
+        @media only screen and (min-width: 1580px) {
+            left: -36%;
+        }
+        @media only screen and (min-width: 1780px) {
+            left: -44%;
+        }
+        @media only screen and (min-width: 2100px) {
+            left: -62%;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        font-size: calc(15px + 1vw);
+        font-family: $header-font-family;
+        font-weight:  100;
+        transform: translate(-10%, -40%);
+        letter-spacing: .4em;
+        white-space: nowrap;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        @media only screen and (max-width: 1240px) {
+            font-size: calc(30px + 1vw);
+        }
+      }
+
+
+    }
+    .graduation {
+      position: absolute;
+      bottom: 25%;
+      right: -50%;
+
+      @media only screen and (max-width: 1240px) {
+        bottom: 30%;
+        right: 10%;
+      }
+
+      .line {
+        width: 6vw;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 70%;
+        left: 9%;
+      }
+      p {
+        font-family: $content-font-family;
+        letter-spacing: .3em;
+        font-size: .7em;
+      }
+
+      p.date {
+        padding-left: 8vw;
+      }
+    }
+
+
+  }
+
+
+}

@@ -42,11 +42,6 @@ nav {
       right: 0;
       bottom: 45%; }
 
-body {
-  background: #FFF;
-  position: relative;
-  margin: 0; }
-
 #header {
   background: #FFF;
   position: relative; }
@@ -59,9 +54,15 @@ body {
     margin-left: 8vw;
     padding-bottom: 200px;
     box-shadow: 14px 7px 20px #97979788; }
+    @media only screen and (max-width: 1240px) {
+      #header .main-image-bg {
+        padding-bottom: 100px; } }
     #header .main-image-bg img {
       height: 100vh;
       opacity: .85; }
+      @media only screen and (max-width: 1240px) {
+        #header .main-image-bg img {
+          height: 72.7vh; } }
     #header .main-image-bg .header-text {
       position: absolute;
       top: 33vh;
@@ -69,6 +70,15 @@ body {
       transform: translateX(50%);
       width: 220px;
       height: 40vh; }
+      @media only screen and (max-width: 1240px) {
+        #header .main-image-bg .header-text {
+          left: 0;
+          top: 50%; } }
+      #header .main-image-bg .header-text .white-letters {
+        color: white; }
+        @media only screen and (max-width: 1240px) {
+          #header .main-image-bg .header-text .white-letters {
+            color: black; } }
       #header .main-image-bg .header-text .first-name {
         font-size: calc(35px + 3vw);
         font-family: "Cormorant Garamond", serif;
@@ -76,6 +86,9 @@ body {
         margin: 0;
         position: absolute;
         left: 11%; }
+        @media only screen and (max-width: 1240px) {
+          #header .main-image-bg .header-text .first-name {
+            font-size: calc(70px + 3vw); } }
         @media only screen and (min-width: 1580px) {
           #header .main-image-bg .header-text .first-name {
             left: 8%; } }
@@ -93,6 +106,9 @@ body {
         left: -30%;
         top: 20%;
         margin: 0; }
+        @media only screen and (max-width: 1240px) {
+          #header .main-image-bg .header-text .surname {
+            font-size: calc(70px + 3vw); } }
         @media only screen and (min-width: 1580px) {
           #header .main-image-bg .header-text .surname {
             left: -36%; } }
@@ -113,10 +129,17 @@ body {
         position: absolute;
         top: 55%;
         left: 20%; }
+        @media only screen and (max-width: 1240px) {
+          #header .main-image-bg .header-text h3 {
+            font-size: calc(30px + 1vw); } }
     #header .main-image-bg .graduation {
       position: absolute;
       bottom: 25%;
       right: -50%; }
+      @media only screen and (max-width: 1240px) {
+        #header .main-image-bg .graduation {
+          bottom: 30%;
+          right: 10%; } }
       #header .main-image-bg .graduation .line {
         width: 6vw;
         height: 1px;
@@ -136,6 +159,9 @@ body {
   margin-top: -100px;
   position: relative;
   padding: 0 20% 0 16%; }
+  @media only screen and (max-width: 1240px) {
+    #contact {
+      margin-top: -50px; } }
   #contact .contact-panel {
     box-sizing: border-box;
     position: relative;
@@ -165,6 +191,9 @@ body {
       top: 80%;
       right: 0;
       transform: rotate(270deg); }
+      @media only screen and (max-width: 1240px) {
+        #contact .contact-panel .line-2 {
+          right: 4%; } }
     #contact .contact-panel .contact-info {
       font-size: .8em;
       letter-spacing: 0.3em;
@@ -176,6 +205,9 @@ body {
         padding-right: 5vw;
         margin-top: 2em;
         margin-bottom: 4em; }
+        @media only screen and (max-width: 1240px) {
+          #contact .contact-panel .contact-info .linkedIn {
+            margin-top: 3em; } }
       #contact .contact-panel .contact-info .email {
         display: block;
         padding-left: 5vw;
@@ -193,6 +225,9 @@ body {
   margin-bottom: 400px;
   position: relative;
   padding: 0 20% 0 16%; }
+  @media only screen and (max-width: 1240px) {
+    #about {
+      margin-bottom: 180px; } }
   #about .about-bg {
     position: absolute;
     right: 16%;
@@ -201,6 +236,10 @@ body {
     height: 200%;
     width: 40vw;
     box-shadow: 14px 10px 20px #97979788; }
+    @media only screen and (max-width: 1240px) {
+      #about .about-bg {
+        height: 140%;
+        top: -10%; } }
     #about .about-bg p {
       font-size: calc(18px + 1.3vw);
       position: absolute;
@@ -209,6 +248,10 @@ body {
       bottom: 15%;
       left: -38%;
       white-space: nowrap; }
+      @media only screen and (max-width: 1240px) {
+        #about .about-bg p:first-child {
+          bottom: 10%;
+          left: -43%; } }
       @media only screen and (min-width: 1580px) {
         #about .about-bg p:first-child {
           left: -34%; } }
@@ -222,6 +265,10 @@ body {
       bottom: 8%;
       left: -24%;
       white-space: nowrap; }
+      @media only screen and (max-width: 1240px) {
+        #about .about-bg p:last-child {
+          left: -28%;
+          bottom: 4%; } }
       @media only screen and (min-width: 1580px) {
         #about .about-bg p:last-child {
           left: -22%; } }
@@ -261,7 +308,7 @@ body {
       text-align: justify;
       letter-spacing: .1em;
       line-height: 2em;
-      font-size: .9em;
+      font-size: calc(8px + .5vw);
       color: #555; }
 
 #projects {
@@ -283,28 +330,31 @@ body {
       background: black;
       position: absolute;
       top: 50%; }
-  #projects .project-styling-1, #projects .project-styling-2 {
+  #projects .project-styling-1 .columns-container, #projects .project-styling-2 .columns-container {
     display: flex;
     flex-flow: row wrap; }
-    #projects .project-styling-1 .image-column, #projects .project-styling-2 .image-column {
+    #projects .project-styling-1 .columns-container .image-column, #projects .project-styling-2 .columns-container .image-column {
       height: auto;
       display: inline-block;
       flex: auto;
       width: calc(300px + 20%);
       position: relative;
       z-index: 2; }
-      #projects .project-styling-1 .image-column img, #projects .project-styling-2 .image-column img {
+      #projects .project-styling-1 .columns-container .image-column img, #projects .project-styling-2 .columns-container .image-column img {
         width: 110%;
         box-shadow: 14px 12px 20px #97979788; }
-      #projects .project-styling-1 .image-column img:hover + div.overlay, #projects .project-styling-2 .image-column img:hover + div.overlay {
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .columns-container .image-column img, #projects .project-styling-2 .columns-container .image-column img {
+            width: 100%; } }
+      #projects .project-styling-1 .columns-container .image-column img:hover + div.overlay, #projects .project-styling-2 .columns-container .image-column img:hover + div.overlay {
         visibility: visible;
         opacity: 1;
         transition: all 1s; }
-      #projects .project-styling-1 .image-column div.overlay:hover, #projects .project-styling-2 .image-column div.overlay:hover {
+      #projects .project-styling-1 .columns-container .image-column div.overlay:hover, #projects .project-styling-2 .columns-container .image-column div.overlay:hover {
         visibility: visible;
         opacity: 1;
         transition: all 1s; }
-      #projects .project-styling-1 .image-column .overlay, #projects .project-styling-2 .image-column .overlay {
+      #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
         opacity: 0;
         transition: all 1s;
         visibility: hidden;
@@ -316,28 +366,36 @@ body {
         position: absolute;
         top: 0;
         text-align: center; }
-        #projects .project-styling-1 .image-column .overlay p, #projects .project-styling-1 .image-column .overlay h3, #projects .project-styling-2 .image-column .overlay p, #projects .project-styling-2 .image-column .overlay h3 {
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
+            width: 100%;
+            opacity: 1;
+            visibility: visible; } }
+        #projects .project-styling-1 .columns-container .image-column .overlay p, #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay p, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           color: white;
           font-family: "Gulim";
           letter-spacing: .3em; }
-        #projects .project-styling-1 .image-column .overlay h3, #projects .project-styling-2 .image-column .overlay h3 {
+        #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           text-transform: uppercase;
           margin-bottom: 12%; }
-        #projects .project-styling-1 .image-column .overlay .line, #projects .project-styling-2 .image-column .overlay .line {
+        #projects .project-styling-1 .columns-container .image-column .overlay .line, #projects .project-styling-2 .columns-container .image-column .overlay .line {
           width: 30%;
           height: 1px;
           background: white;
           position: absolute;
           top: 48%;
           left: 34%; }
-    #projects .project-styling-1 .text-column, #projects .project-styling-2 .text-column {
+    #projects .project-styling-1 .columns-container .text-column, #projects .project-styling-2 .columns-container .text-column {
       height: auto;
       display: inline-block;
       flex: auto;
       width: calc(250px + 20%);
       position: relative;
       z-index: 1; }
-      #projects .project-styling-1 .text-column .text-panel, #projects .project-styling-2 .text-column .text-panel {
+      @media only screen and (max-width: 1240px) {
+        #projects .project-styling-1 .columns-container .text-column, #projects .project-styling-2 .columns-container .text-column {
+          margin: 20px; } }
+      #projects .project-styling-1 .columns-container .text-column .text-panel, #projects .project-styling-2 .columns-container .text-column .text-panel {
         box-sizing: border-box;
         box-shadow: 14px 12px 20px #97979788;
         background: #FFF;
@@ -345,67 +403,109 @@ body {
         transform: translateY(-50px);
         min-height: 450px;
         font-size: 1.2vw; }
-        #projects .project-styling-1 .text-column .text-panel p, #projects .project-styling-2 .text-column .text-panel p {
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .columns-container .text-column .text-panel, #projects .project-styling-2 .columns-container .text-column .text-panel {
+            width: 70vw;
+            font-size: 2vw;
+            padding: 3em; } }
+        #projects .project-styling-1 .columns-container .text-column .text-panel p, #projects .project-styling-2 .columns-container .text-column .text-panel p {
           line-height: 1.8em;
           font-size: .9em;
           color: #555; }
-          #projects .project-styling-1 .text-column .text-panel p a, #projects .project-styling-2 .text-column .text-panel p a {
+          #projects .project-styling-1 .columns-container .text-column .text-panel p a, #projects .project-styling-2 .columns-container .text-column .text-panel p a {
             text-decoration: none;
             color: black;
             font-weight: 900; }
-    #projects .project-styling-1 .project-links, #projects .project-styling-2 .project-links {
-      width: 100%;
-      height: 300px;
-      flex: auto;
-      margin-bottom: 200px;
-      margin-top: -225px; }
-      #projects .project-styling-1 .project-links .links-container, #projects .project-styling-2 .project-links .links-container {
-        margin: auto;
-        width: 28%;
-        height: 100%;
-        background: #A4BAB9;
-        position: relative; }
-        #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
-          width: 5vw;
-          height: 1px;
-          background: white;
-          position: absolute;
-          bottom: 13%; }
-        #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
-          right: 10%; }
-        #projects .project-styling-1 .project-links .links-container .line:first-child, #projects .project-styling-2 .project-links .links-container .line:first-child {
-          left: 10%; }
-        #projects .project-styling-1 .project-links .links-container .link-icon, #projects .project-styling-2 .project-links .links-container .link-icon {
-          width: calc(20px + .2vw);
-          position: absolute;
-          right: 40%;
-          bottom: 10%; }
-        #projects .project-styling-1 .project-links .links-container .github-icon, #projects .project-styling-2 .project-links .links-container .github-icon {
-          width: calc(20px + .2vw);
-          position: absolute;
-          left: 40%;
-          bottom: 10%; }
-  #projects .project-styling-2 .image-column img:first-child {
-    transform: translateX(-9%); }
-  #projects .project-styling-2 .image-column img.gif-1 {
-    position: absolute;
-    bottom: 60%;
-    transform: rotate(-30deg) translate(-10%, -5%);
-    width: 38%;
-    box-shadow: -4px 6px 9px #00000050; }
-  #projects .project-styling-2 .image-column img.gif-2 {
-    position: absolute;
-    bottom: 60%;
-    transform: rotate(-30deg) translate(-30%, 90%);
-    width: 60%;
-    box-shadow: -4px 6px 9px #00000050; }
-  #projects .project-styling-2 .image-column div.overlay {
-    height: 99.5%;
-    right: 0; }
-  #projects .project-styling-2 .text-column .text-panel {
-    padding: 3em 5em 3em 3em; }
+  #projects .project-styling-1 .project-links, #projects .project-styling-2 .project-links {
+    width: 100%;
+    height: 300px;
+    flex: auto;
+    margin-bottom: 200px;
+    margin-top: -225px; }
+    @media only screen and (max-width: 1240px) {
+      #projects .project-styling-1 .project-links, #projects .project-styling-2 .project-links {
+        margin-top: -100px;
+        height: 50px; } }
+    #projects .project-styling-1 .project-links .links-container, #projects .project-styling-2 .project-links .links-container {
+      margin: auto;
+      width: 28%;
+      height: 100%;
+      background: #A4BAB9;
+      box-shadow: 14px 12px 20px #97979788;
+      position: relative; }
+      @media only screen and (max-width: 1240px) {
+        #projects .project-styling-1 .project-links .links-container, #projects .project-styling-2 .project-links .links-container {
+          width: 100%;
+          z-index: 1; } }
+      #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
+        width: 5vw;
+        height: 1px;
+        background: white;
+        position: absolute;
+        bottom: 13%; }
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
+            bottom: 50%;
+            width: 15vw; } }
+      #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
+        right: 10%; }
+      #projects .project-styling-1 .project-links .links-container .line:first-child, #projects .project-styling-2 .project-links .links-container .line:first-child {
+        left: 10%; }
+      #projects .project-styling-1 .project-links .links-container .link-icon, #projects .project-styling-2 .project-links .links-container .link-icon {
+        width: calc(20px + .2vw);
+        position: absolute;
+        right: 40%;
+        bottom: 10%; }
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .project-links .links-container .link-icon, #projects .project-styling-2 .project-links .links-container .link-icon {
+            bottom: 25%;
+            width: calc(20px + .5vw); } }
+      #projects .project-styling-1 .project-links .links-container .github-icon, #projects .project-styling-2 .project-links .links-container .github-icon {
+        width: calc(20px + .2vw);
+        position: absolute;
+        left: 40%;
+        bottom: 10%; }
+        @media only screen and (max-width: 1240px) {
+          #projects .project-styling-1 .project-links .links-container .github-icon, #projects .project-styling-2 .project-links .links-container .github-icon {
+            bottom: 25%;
+            width: calc(20px + .5vw); } }
+  #projects .project-styling-2 .columns-container {
+    flex-flow: wrap-reverse; }
+    #projects .project-styling-2 .columns-container .image-column img:first-child {
+      transform: translateX(-9%); }
+      @media only screen and (max-width: 1240px) {
+        #projects .project-styling-2 .columns-container .image-column img:first-child {
+          transform: translateX(0%); } }
+    #projects .project-styling-2 .columns-container .image-column img.gif-1 {
+      position: absolute;
+      bottom: 60%;
+      transform: rotate(-30deg) translate(-10%, -5%);
+      width: 38%;
+      box-shadow: -4px 6px 9px #00000050; }
+      @media only screen and (max-width: 1240px) {
+        #projects .project-styling-2 .columns-container .image-column img.gif-1 {
+          width: 34%;
+          transform: rotate(-30deg) translate(15%, 5%); } }
+    #projects .project-styling-2 .columns-container .image-column img.gif-2 {
+      position: absolute;
+      bottom: 60%;
+      transform: rotate(-30deg) translate(-30%, 90%);
+      width: 60%;
+      box-shadow: -4px 6px 9px #00000050; }
+      @media only screen and (max-width: 1240px) {
+        #projects .project-styling-2 .columns-container .image-column img.gif-2 {
+          width: 56%;
+          transform: rotate(-30deg) translate(-13%, 95%); } }
+    #projects .project-styling-2 .columns-container .image-column div.overlay {
+      height: 99.5%;
+      right: 0; }
+    #projects .project-styling-2 .columns-container .text-column .text-panel {
+      padding: 3em 5em 3em 3em; }
   #projects .project-styling-2 .project-links {
     margin-top: -225px; }
+    @media only screen and (max-width: 1240px) {
+      #projects .project-styling-2 .project-links {
+        margin-top: -100px; } }
 
 #skills {
   height: auto;
@@ -423,6 +523,9 @@ body {
     position: relative;
     margin-bottom: 1em;
     margin-left: 8%; }
+    @media only screen and (max-width: 1240px) {
+      #skills h2 {
+        padding-right: 14.5vw; } }
     #skills h2 .line {
       width: 7vw;
       height: 1px;
@@ -442,6 +545,10 @@ body {
       transform: rotate(270deg);
       transform-origin: center;
       left: 30%; }
+      @media only screen and (max-width: 1240px) {
+        #skills .skills-columns .line {
+          left: 28%;
+          width: 12vh; } }
     #skills .skills-columns h3 {
       margin: 0;
       margin-top: 10px;
@@ -494,5 +601,10 @@ body {
             margin-top: 0; }
         #skills .skills-columns .methodology-column .methodology-panel h3 {
           color: white; }
+
+body {
+  background: #FFF;
+  position: relative;
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

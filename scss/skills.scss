@@ -1,0 +1,131 @@
+#skills {
+  height: auto;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 15px 30% 0 20%;
+  font-family: $content-font-family;
+
+  h2 {
+    padding-right: 15vw;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: 100;
+    font-size: calc(12px + .5vw);
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 8%;
+
+    @media only screen and (max-width: 1240px) {
+      padding-right: 14.5vw;
+    }
+
+    .line {
+      width: 7vw;
+      height: 1px;
+      background: black;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  .skills-columns {
+    display: flex;
+    flex-flow: row wrap;
+
+    .line {
+      width: 22vh;
+      height: 1px;
+      background: black;
+      position: absolute;
+      bottom: 14%;
+      z-index: 99;
+      transform: rotate(270deg);
+      transform-origin: center;
+      left: 30%;
+
+      @media only screen and (max-width: 1240px) {
+        left: 28%;
+        width: 12vh;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      margin-top: 10px;
+      font-size: 1.2vw;
+    }
+
+    .technologies-column {
+      flex: auto;
+      min-width: 250px;
+
+      .technologies-panel {
+        padding: 30px 0 50px 0;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        box-shadow: 14px 7px 20px #97979788;
+        transform: translate(30%, -10%);
+        background: white;
+
+        ul {
+          display: inline-block;
+          padding-inline-start: 0;
+          margin-top: 8px;
+
+          li {
+            font-family: $content-font-family;
+            margin: 8px 0;
+            list-style: none;
+            font-size: calc(.2em + .8vw)
+          }
+
+        }
+      }
+    }
+
+
+    .methodology-column {
+      min-width: 250px;
+      flex: auto;
+      position: relative;
+
+      .methodology-panel {
+        text-align: center;
+        width: 80%;
+        position: relative;
+        box-sizing: border-box;
+        background: #A4BAB9;
+        box-shadow: 14px 7px 20px #97979788;
+        transform: translateX(-10%);
+        padding: 30px 0;
+
+        ul {
+          display: inline-block;
+          padding-inline-start: 0;
+          margin-bottom: 0px;
+
+          li {
+            color: white;
+            font-family: $content-font-family;
+            margin: 8px 0;
+            list-style: none;
+            font-size: calc(.3em + .8vw);
+            margin-top: 0;
+          }
+
+        }
+
+        h3 {
+          color: white;
+        }
+      }
+    }
+  }
+
+
+
+}

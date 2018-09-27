@@ -1,0 +1,122 @@
+#about {
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 400px;
+  position: relative;
+  padding: 0 20% 0 16%;
+
+  @media only screen and (max-width: 1240px) {
+    margin-bottom: 180px;
+  }
+
+  .about-bg {
+    position: absolute;
+    right: 16%;
+    top: -30%;
+    background: #A4BAB9;
+    height: 200%;
+    width: 40vw;
+    box-shadow: 14px 10px 20px #97979788;
+
+    @media only screen and (max-width: 1240px) {
+      height: 140%;
+      top: -10%;
+    }
+
+    // Quote
+
+    p {
+      font-size: calc(18px + 1.3vw);
+      position: absolute;
+      font-family: $header-font-family;
+
+    }
+
+
+    p:first-child {
+      bottom: 15%;
+      left: -38%;
+      white-space: nowrap;
+
+      @media only screen and (max-width: 1240px) {
+        bottom: 10%;
+        left: -43%;
+      }
+
+      @media only screen and (min-width: 1580px) {
+          left: -34%;
+      }
+      @media only screen and (min-width: 1780px) {
+          left: -31%;
+      }
+      @media only screen and (min-width: 2100px) {
+          left: -30%;
+      }
+    }
+
+    p:last-child {
+      bottom: 8%;
+      left: -24%;
+      white-space: nowrap;
+
+      @media only screen and (max-width: 1240px) {
+        left: -28%;
+        bottom: 4%;
+      }
+
+      @media only screen and (min-width: 1580px) {
+          left: -22%;
+      }
+      @media only screen and (min-width: 1780px) {
+          left: -20%;
+      }
+      @media only screen and (min-width: 2100px) {
+          left: -19%;
+      }
+    }
+
+
+  }
+
+    .about-panel {
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+      background: $primary-background-color;
+      font-family: $content-font-family;
+      line-height: 1.38em;
+      padding: 7em 6em;
+      z-index: 4;
+      background: $primary-background-color;
+      width: 100%;
+      box-shadow: 14px 10px 20px #97979788;
+
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        font-weight: 100;
+        font-size: calc(12px + .5vw);
+        text-align: center;
+        position: relative;
+        margin-bottom: 2em;
+
+        .line {
+          width: 16vw;
+          height: 1px;
+          background: black;
+          position: absolute;
+          top: 50%;
+        }
+
+      }
+
+      p {
+        text-align: justify;
+        letter-spacing: .1em;
+        line-height: 2em;
+        font-size: calc(8px + .5vw);
+        color: #555;
+      }
+    }
+
+}
