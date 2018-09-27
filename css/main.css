@@ -69,6 +69,7 @@ nav {
       right: 4%;
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
+      -moz-transform: translateX(50%);
       transform: translateX(50%);
       width: 220px;
       height: 40vh; }
@@ -127,6 +128,7 @@ nav {
         font-weight: 100;
         -webkit-transform: translate(-10%, -40%);
         -ms-transform: translate(-10%, -40%);
+        -moz-transform: translate(-10%, -40%);
         transform: translate(-10%, -40%);
         letter-spacing: .4em;
         white-space: nowrap;
@@ -196,6 +198,7 @@ nav {
       right: 0;
       -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
       transform: rotate(270deg); }
       @media only screen and (max-width: 1240px) {
         #contact .contact-panel .line-2 {
@@ -408,6 +411,7 @@ nav {
         padding: 3em 3em 3em 5em;
         -webkit-transform: translateY(-50px);
         -ms-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
         transform: translateY(-50px);
         min-height: 450px;
         font-size: 1.2vw; }
@@ -482,17 +486,20 @@ nav {
     #projects .project-styling-2 .columns-container .image-column img:first-child {
       -webkit-transform: translateX(-9%);
       -ms-transform: translateX(-9%);
+      -moz-transform: translateX(-9%);
       transform: translateX(-9%); }
       @media only screen and (max-width: 1240px) {
         #projects .project-styling-2 .columns-container .image-column img:first-child {
           -webkit-transform: translateX(0%);
           -ms-transform: translateX(0%);
+          -moz-transform: translateX(0%);
           transform: translateX(0%); } }
     #projects .project-styling-2 .columns-container .image-column img.gif-1 {
       position: absolute;
       bottom: 60%;
       -webkit-transform: rotate(-30deg) translate(-10%, -5%);
       -ms-transform: rotate(-30deg) translate(-10%, -5%);
+      -moz-transform: rotate(-30deg) translate(-10%, -5%);
       transform: rotate(-30deg) translate(-10%, -5%);
       width: 38%;
       box-shadow: -4px 6px 9px #00000050; }
@@ -501,12 +508,14 @@ nav {
           width: 34%;
           -webkit-transform: rotate(-30deg) translate(15%, 5%);
           -ms-transform: rotate(-30deg) translate(15%, 5%);
+          -moz-transform: rotate(-30deg) translate(15%, 5%);
           transform: rotate(-30deg) translate(15%, 5%); } }
     #projects .project-styling-2 .columns-container .image-column img.gif-2 {
       position: absolute;
       bottom: 60%;
       -webkit-transform: rotate(-30deg) translate(-30%, 90%);
       -ms-transform: rotate(-30deg) translate(-30%, 90%);
+      -moz-transform: rotate(-30deg) translate(-30%, 90%);
       transform: rotate(-30deg) translate(-30%, 90%);
       width: 60%;
       box-shadow: -4px 6px 9px #00000050; }
@@ -515,6 +524,7 @@ nav {
           width: 56%;
           -webkit-transform: rotate(-30deg) translate(-13%, 95%);
           -ms-transform: rotate(-30deg) translate(-13%, 95%);
+          -moz-transform: rotate(-30deg) translate(-13%, 95%);
           transform: rotate(-30deg) translate(-13%, 95%); } }
     #projects .project-styling-2 .columns-container .image-column div.overlay {
       height: 99.5%;
@@ -533,6 +543,9 @@ nav {
   position: relative;
   padding: 15px 30% 0 20%;
   font-family: "Gulim"; }
+  @media only screen and (max-width: 768px) {
+    #skills {
+      padding: 15px 23% 0 16%; } }
   #skills h2 {
     padding-right: 15vw;
     text-align: right;
@@ -564,6 +577,7 @@ nav {
       z-index: 99;
       -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
       transform: rotate(270deg);
       transform-origin: center;
       left: 30%; }
@@ -578,6 +592,9 @@ nav {
     #skills .skills-columns .technologies-column {
       flex: auto;
       min-width: 250px; }
+      @media only screen and (max-width: 768px) {
+        #skills .skills-columns .technologies-column {
+          min-width: 220px; } }
       #skills .skills-columns .technologies-column .technologies-panel {
         padding: 30px 0 50px 0;
         text-align: center;
@@ -588,6 +605,7 @@ nav {
         box-shadow: 14px 7px 20px #97979788;
         -webkit-transform: translate(30%, -10%);
         -ms-transform: translate(30%, -10%);
+        -moz-transform: translate(30%, -10%);
         transform: translate(30%, -10%);
         background: white; }
         #skills .skills-columns .technologies-column .technologies-panel ul {
@@ -603,6 +621,9 @@ nav {
       min-width: 250px;
       flex: auto;
       position: relative; }
+      @media only screen and (max-width: 768px) {
+        #skills .skills-columns .methodology-column {
+          min-width: 220px; } }
       #skills .skills-columns .methodology-column .methodology-panel {
         text-align: center;
         width: 80%;
@@ -612,6 +633,7 @@ nav {
         box-shadow: 14px 7px 20px #97979788;
         -webkit-transform: translateX(-10%);
         -ms-transform: translateX(-10%);
+        -moz-transform: translateX(-10%);
         transform: translateX(-10%);
         padding: 30px 0; }
         #skills .skills-columns .methodology-column .methodology-panel ul {

@@ -7,8 +7,9 @@ $content-letter-spacing: .3em;
 
 @mixin transform($property) {
   -webkit-transform: $property;
-      -ms-transform: $property;
-          transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  transform: $property;
 }
 
 @import "./partials/nav";
