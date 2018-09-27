@@ -76,6 +76,15 @@ body {
         margin: 0;
         position: absolute;
         left: 11%; }
+        @media only screen and (min-width: 1580px) {
+          #header .main-image-bg .header-text .first-name {
+            left: 8%; } }
+        @media only screen and (min-width: 1780px) {
+          #header .main-image-bg .header-text .first-name {
+            left: 3%; } }
+        @media only screen and (min-width: 2100px) {
+          #header .main-image-bg .header-text .first-name {
+            left: -6%; } }
       #header .main-image-bg .header-text .surname {
         font-size: calc(35px + 3vw);
         font-family: "Cormorant Garamond", serif;
@@ -84,6 +93,15 @@ body {
         left: -30%;
         top: 20%;
         margin: 0; }
+        @media only screen and (min-width: 1580px) {
+          #header .main-image-bg .header-text .surname {
+            left: -36%; } }
+        @media only screen and (min-width: 1780px) {
+          #header .main-image-bg .header-text .surname {
+            left: -44%; } }
+        @media only screen and (min-width: 2100px) {
+          #header .main-image-bg .header-text .surname {
+            left: -62%; } }
       #header .main-image-bg .header-text h3 {
         margin: 0;
         font-size: calc(15px + 1vw);
@@ -191,10 +209,28 @@ body {
       bottom: 15%;
       left: -38%;
       white-space: nowrap; }
+      @media only screen and (min-width: 1580px) {
+        #about .about-bg p:first-child {
+          left: -34%; } }
+      @media only screen and (min-width: 1780px) {
+        #about .about-bg p:first-child {
+          left: -31%; } }
+      @media only screen and (min-width: 2100px) {
+        #about .about-bg p:first-child {
+          left: -30%; } }
     #about .about-bg p:last-child {
       bottom: 8%;
       left: -24%;
       white-space: nowrap; }
+      @media only screen and (min-width: 1580px) {
+        #about .about-bg p:last-child {
+          left: -22%; } }
+      @media only screen and (min-width: 1780px) {
+        #about .about-bg p:last-child {
+          left: -20%; } }
+      @media only screen and (min-width: 2100px) {
+        #about .about-bg p:last-child {
+          left: -19%; } }
   #about .about-panel {
     box-sizing: border-box;
     position: relative;
@@ -251,6 +287,7 @@ body {
     display: flex;
     flex-flow: row wrap; }
     #projects .project-styling-1 .image-column, #projects .project-styling-2 .image-column {
+      height: auto;
       display: inline-block;
       flex: auto;
       width: calc(300px + 20%);
@@ -259,7 +296,42 @@ body {
       #projects .project-styling-1 .image-column img, #projects .project-styling-2 .image-column img {
         width: 110%;
         box-shadow: 14px 12px 20px #97979788; }
+      #projects .project-styling-1 .image-column img:hover + div.overlay, #projects .project-styling-2 .image-column img:hover + div.overlay {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s; }
+      #projects .project-styling-1 .image-column div.overlay:hover, #projects .project-styling-2 .image-column div.overlay:hover {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s; }
+      #projects .project-styling-1 .image-column .overlay, #projects .project-styling-2 .image-column .overlay {
+        opacity: 0;
+        transition: all 1s;
+        visibility: hidden;
+        box-sizing: border-box;
+        padding-top: 30%;
+        width: 110%;
+        height: 99.5%;
+        background: #00000085;
+        position: absolute;
+        top: 0;
+        text-align: center; }
+        #projects .project-styling-1 .image-column .overlay p, #projects .project-styling-1 .image-column .overlay h3, #projects .project-styling-2 .image-column .overlay p, #projects .project-styling-2 .image-column .overlay h3 {
+          color: white;
+          font-family: "Gulim";
+          letter-spacing: .3em; }
+        #projects .project-styling-1 .image-column .overlay h3, #projects .project-styling-2 .image-column .overlay h3 {
+          text-transform: uppercase;
+          margin-bottom: 12%; }
+        #projects .project-styling-1 .image-column .overlay .line, #projects .project-styling-2 .image-column .overlay .line {
+          width: 30%;
+          height: 1px;
+          background: white;
+          position: absolute;
+          top: 48%;
+          left: 34%; }
     #projects .project-styling-1 .text-column, #projects .project-styling-2 .text-column {
+      height: auto;
       display: inline-block;
       flex: auto;
       width: calc(250px + 20%);
@@ -271,7 +343,8 @@ body {
         background: #FFF;
         padding: 3em 3em 3em 5em;
         transform: translateY(-50px);
-        min-height: 450px; }
+        min-height: 450px;
+        font-size: 1.2vw; }
         #projects .project-styling-1 .text-column .text-panel p, #projects .project-styling-2 .text-column .text-panel p {
           line-height: 1.8em;
           font-size: .9em;
@@ -285,11 +358,11 @@ body {
       height: 300px;
       flex: auto;
       margin-bottom: 200px;
-      margin-top: -105px; }
+      margin-top: -225px; }
       #projects .project-styling-1 .project-links .links-container, #projects .project-styling-2 .project-links .links-container {
         margin: auto;
         width: 28%;
-        height: 50%;
+        height: 100%;
         background: #A4BAB9;
         position: relative; }
         #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
@@ -297,38 +370,46 @@ body {
           height: 1px;
           background: white;
           position: absolute;
-          bottom: 15%; }
+          bottom: 13%; }
         #projects .project-styling-1 .project-links .links-container .line, #projects .project-styling-2 .project-links .links-container .line {
           right: 10%; }
         #projects .project-styling-1 .project-links .links-container .line:first-child, #projects .project-styling-2 .project-links .links-container .line:first-child {
           left: 10%; }
         #projects .project-styling-1 .project-links .links-container .link-icon, #projects .project-styling-2 .project-links .links-container .link-icon {
+          width: calc(20px + .2vw);
           position: absolute;
           right: 40%;
           bottom: 10%; }
         #projects .project-styling-1 .project-links .links-container .github-icon, #projects .project-styling-2 .project-links .links-container .github-icon {
+          width: calc(20px + .2vw);
           position: absolute;
           left: 40%;
           bottom: 10%; }
-  #projects .project-styling-2 img {
+  #projects .project-styling-2 .image-column img:first-child {
+    transform: translateX(-9%); }
+  #projects .project-styling-2 .image-column img.gif-1 {
     position: absolute;
-    right: 0; }
-  #projects .project-styling-2 img.gif-1 {
-    transform: rotate(-30deg) translate(-164%, -100%);
+    bottom: 60%;
+    transform: rotate(-30deg) translate(-10%, -5%);
     width: 38%;
     box-shadow: -4px 6px 9px #00000050; }
-  #projects .project-styling-2 img.gif-2 {
-    transform: rotate(-30deg) translate(-90%, 30%);
+  #projects .project-styling-2 .image-column img.gif-2 {
+    position: absolute;
+    bottom: 60%;
+    transform: rotate(-30deg) translate(-30%, 90%);
     width: 60%;
     box-shadow: -4px 6px 9px #00000050; }
+  #projects .project-styling-2 .image-column div.overlay {
+    height: 99.5%;
+    right: 0; }
   #projects .project-styling-2 .text-column .text-panel {
     padding: 3em 5em 3em 3em; }
   #projects .project-styling-2 .project-links {
-    margin-top: -100px; }
+    margin-top: -225px; }
 
 #skills {
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   position: relative;
   padding: 15px 30% 0 20%;
   font-family: "Gulim"; }
@@ -363,7 +444,8 @@ body {
       left: 30%; }
     #skills .skills-columns h3 {
       margin: 0;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-size: 1.2vw; }
     #skills .skills-columns .technologies-column {
       flex: auto;
       min-width: 250px; }
@@ -385,7 +467,7 @@ body {
             font-family: "Gulim";
             margin: 8px 0;
             list-style: none;
-            font-size: .8em; }
+            font-size: calc(.2em + .8vw); }
     #skills .skills-columns .methodology-column {
       min-width: 250px;
       flex: auto;
@@ -408,7 +490,7 @@ body {
             font-family: "Gulim";
             margin: 8px 0;
             list-style: none;
-            font-size: .8em;
+            font-size: calc(.3em + .8vw);
             margin-top: 0; }
         #skills .skills-columns .methodology-column .methodology-panel h3 {
           color: white; }

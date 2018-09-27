@@ -48,6 +48,16 @@ body {
         margin: 0;
         position: absolute;
         left: 11%;
+
+        @media only screen and (min-width: 1580px) {
+            left: 8%;
+        }
+        @media only screen and (min-width: 1780px) {
+            left: 3%;
+        }
+        @media only screen and (min-width: 2100px) {
+            left: -6%;
+        }
       }
 
       .surname {
@@ -58,6 +68,15 @@ body {
         left: -30%;
         top: 20%;;
         margin: 0;
+        @media only screen and (min-width: 1580px) {
+            left: -36%;
+        }
+        @media only screen and (min-width: 1780px) {
+            left: -44%;
+        }
+        @media only screen and (min-width: 2100px) {
+            left: -62%;
+        }
       }
 
       h3 {
@@ -72,6 +91,7 @@ body {
         top: 55%;
         left: 20%;
       }
+
 
     }
     .graduation {
@@ -212,13 +232,34 @@ body {
       bottom: 15%;
       left: -38%;
       white-space: nowrap;
+
+      @media only screen and (min-width: 1580px) {
+          left: -34%;
+      }
+      @media only screen and (min-width: 1780px) {
+          left: -31%;
+      }
+      @media only screen and (min-width: 2100px) {
+          left: -30%;
+      }
     }
 
     p:last-child {
       bottom: 8%;
       left: -24%;
       white-space: nowrap;
+      @media only screen and (min-width: 1580px) {
+          left: -22%;
+      }
+      @media only screen and (min-width: 1780px) {
+          left: -20%;
+      }
+      @media only screen and (min-width: 2100px) {
+          left: -19%;
+      }
     }
+
+
   }
 
     .about-panel {
@@ -294,12 +335,12 @@ body {
     flex-flow: row wrap;
 
     .image-column {
+      height: auto;
       display: inline-block;
       flex: auto;
       width: calc(300px + 20%);
       position: relative;
       z-index: 2;
-
 
       img {
         width: 110%;
@@ -308,8 +349,57 @@ body {
         //Needs media query for 100%
 
       }
+
+      img:hover{
+        & + div.overlay {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+        }
+      }
+
+      div.overlay:hover {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+      }
+
+      .overlay {
+        opacity: 0;
+        transition: all 1s;
+        visibility: hidden;
+        box-sizing: border-box;
+        padding-top: 30%;
+        width: 110%;
+        height: 99.5%;
+        background: #00000085;
+        position: absolute;
+        top: 0;
+        text-align: center;
+
+        p, h3 {
+          color: white;
+          font-family: $content-font-family;
+          letter-spacing: .3em;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: 12%;
+        }
+
+        .line {
+          width: 30%;
+          height: 1px;
+          background: white;
+          position: absolute;
+          top: 48%;
+          left: 34%;
+        }
+      }
     }
     .text-column {
+      height: auto;
       display: inline-block;
       flex: auto;
       width: calc(250px + 20%);
@@ -323,6 +413,7 @@ body {
         padding: 3em 3em 3em 5em;
         transform: translateY(-50px);
         min-height: 450px;
+        font-size: 1.2vw;
 
         p {
           line-height: 1.8em;
@@ -343,12 +434,12 @@ body {
       height: 300px;
       flex: auto;
       margin-bottom: 200px;
-      margin-top: -105px;
+      margin-top: -225px;
 
       .links-container {
         margin: auto;
         width: 28%;
-        height: 50%;
+        height: 100%;
         background: #A4BAB9;
         position: relative;
 
@@ -357,7 +448,7 @@ body {
           height: 1px;
           background: white;
           position: absolute;
-          bottom: 15%;
+          bottom: 13%;
         }
         .line {
           right: 10%;
@@ -369,11 +460,13 @@ body {
 
 
         .link-icon {
+          width: calc(20px + .2vw);
           position: absolute;
           right: 40%;
           bottom: 10%;
         }
         .github-icon {
+          width: calc(20px + .2vw);
           position: absolute;
           left: 40%;
           bottom: 10%;
@@ -384,31 +477,42 @@ body {
   }
 
   .project-styling-2 {
-    img {
-      position: absolute;
-      right: 0;
-    }
 
-    img.gif-1 {
-      transform: rotate(-30deg) translate(-164%, -100%);
-      width: 38%;
-      box-shadow: -4px 6px 9px #00000050;
-    }
+    .image-column {
+      img:first-child {
+        transform: translateX(-9%);
+      }
 
-    img.gif-2 {
-      transform: rotate(-30deg) translate(-90%, 30%);
-      width: 60%;
-      box-shadow: -4px 6px 9px #00000050;
-    }
+      img.gif-1 {
+        position: absolute;
+        bottom: 60%;
+        transform: rotate(-30deg) translate(-10%, -5%);
+        width: 38%;
+        box-shadow: -4px 6px 9px #00000050;
+      }
 
+      img.gif-2 {
+        position: absolute;
+        bottom: 60%;
+        transform: rotate(-30deg) translate(-30%, 90%);
+        width: 60%;
+        box-shadow: -4px 6px 9px #00000050;
+      }
+
+      div.overlay {
+        height: 99.5%;
+        right: 0;
+      }
+    }
     .text-column {
       .text-panel {
         padding: 3em 5em 3em 3em;
       }
     }
 
+
     .project-links {
-      margin-top: -100px;
+      margin-top: -225px;
     }
   }
 }
@@ -417,7 +521,7 @@ body {
 
 #skills {
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   position: relative;
   padding: 15px 30% 0 20%;
   font-family: $content-font-family;
@@ -461,6 +565,7 @@ body {
     h3 {
       margin: 0;
       margin-top: 10px;
+      font-size: 1.2vw;
     }
 
     .technologies-column {
@@ -487,7 +592,7 @@ body {
             font-family: $content-font-family;
             margin: 8px 0;
             list-style: none;
-            font-size: .8em;
+            font-size: calc(.2em + .8vw)
           }
 
         }
@@ -520,7 +625,7 @@ body {
             font-family: $content-font-family;
             margin: 8px 0;
             list-style: none;
-            font-size: .8em;
+            font-size: calc(.3em + .8vw);
             margin-top: 0;
           }
 
