@@ -71,14 +71,14 @@ body {
       height: 40vh; }
       #header .main-image-bg .header-text .first-name {
         font-size: calc(35px + 3vw);
-        font-family: "Big Casion";
+        font-family: "Cormorant Garamond", serif;
         font-weight: 100;
         margin: 0;
         position: absolute;
-        left: 15%; }
+        left: 11%; }
       #header .main-image-bg .header-text .surname {
         font-size: calc(35px + 3vw);
-        font-family: "Big Casion";
+        font-family: "Cormorant Garamond", serif;
         font-weight: 100;
         position: absolute;
         left: -30%;
@@ -87,7 +87,7 @@ body {
       #header .main-image-bg .header-text h3 {
         margin: 0;
         font-size: calc(15px + 1vw);
-        font-family: "Big Casion";
+        font-family: "Cormorant Garamond", serif;
         font-weight: 100;
         transform: translate(-10%, -40%);
         letter-spacing: .4em;
@@ -95,6 +95,23 @@ body {
         position: absolute;
         top: 55%;
         left: 20%; }
+    #header .main-image-bg .graduation {
+      position: absolute;
+      bottom: 25%;
+      right: -50%; }
+      #header .main-image-bg .graduation .line {
+        width: 6vw;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 70%;
+        left: 9%; }
+      #header .main-image-bg .graduation p {
+        font-family: "Gulim";
+        letter-spacing: .3em;
+        font-size: .7em; }
+      #header .main-image-bg .graduation p.date {
+        padding-left: 8vw; }
 
 #contact {
   height: auto;
@@ -145,9 +162,12 @@ body {
         display: block;
         padding-left: 5vw;
         margin-bottom: 3em; }
-      #contact .contact-panel .contact-info a img {
-        vertical-align: middle;
-        margin-right: 10px; }
+      #contact .contact-panel .contact-info a {
+        text-decoration: none;
+        color: black; }
+        #contact .contact-panel .contact-info a img {
+          vertical-align: middle;
+          margin-right: 10px; }
 
 #about {
   height: auto;
@@ -165,14 +185,15 @@ body {
     box-shadow: 14px 10px 20px #97979788; }
     #about .about-bg p {
       font-size: calc(18px + 1.3vw);
-      position: absolute; }
+      position: absolute;
+      font-family: "Cormorant Garamond", serif; }
     #about .about-bg p:first-child {
       bottom: 15%;
-      left: -40%;
+      left: -38%;
       white-space: nowrap; }
     #about .about-bg p:last-child {
       bottom: 8%;
-      left: -26%;
+      left: -24%;
       white-space: nowrap; }
   #about .about-panel {
     box-sizing: border-box;
@@ -181,7 +202,7 @@ body {
     background: #FFF;
     font-family: "Gulim";
     line-height: 1.38em;
-    padding: 7em 3em;
+    padding: 7em 6em;
     z-index: 4;
     background: #FFF;
     width: 100%;
@@ -203,8 +224,9 @@ body {
     #about .about-panel p {
       text-align: justify;
       letter-spacing: .1em;
-      line-height: 1.8em;
-      font-size: .9em; }
+      line-height: 2em;
+      font-size: .9em;
+      color: #555; }
 
 #projects {
   height: auto;
@@ -251,8 +273,13 @@ body {
         transform: translateY(-50px);
         min-height: 450px; }
         #projects .project-styling-1 .text-column .text-panel p, #projects .project-styling-2 .text-column .text-panel p {
-          line-height: 1.4em;
-          font-size: .9em; }
+          line-height: 1.8em;
+          font-size: .9em;
+          color: #555; }
+          #projects .project-styling-1 .text-column .text-panel p a, #projects .project-styling-2 .text-column .text-panel p a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900; }
     #projects .project-styling-1 .project-links, #projects .project-styling-2 .project-links {
       width: 100%;
       height: 300px;

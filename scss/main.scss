@@ -1,6 +1,6 @@
 $primary-color: #333;
 $primary-background-color: #FFF;
-$header-font-family: 'Big Casion';
+$header-font-family: 'Cormorant Garamond', serif;
 $content-font-family: 'Gulim';
 $content-letter-spacing: .3em;
 
@@ -47,7 +47,7 @@ body {
         font-weight:  100;
         margin: 0;
         position: absolute;
-        left: 15%;
+        left: 11%;
       }
 
       .surname {
@@ -74,6 +74,31 @@ body {
       }
 
     }
+    .graduation {
+      position: absolute;
+      bottom: 25%;
+      right: -50%;
+
+      .line {
+        width: 6vw;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 70%;
+        left: 9%;
+      }
+      p {
+        font-family: $content-font-family;
+        letter-spacing: .3em;
+        font-size: .7em;
+      }
+
+      p.date {
+        padding-left: 8vw;
+      }
+    }
+
+
   }
 
 
@@ -144,6 +169,8 @@ body {
       }
 
       a {
+        text-decoration: none;
+        color: black;
 
         img {
           vertical-align: middle;
@@ -176,17 +203,20 @@ body {
     p {
       font-size: calc(18px + 1.3vw);
       position: absolute;
+      font-family: $header-font-family;
+
     }
+
 
     p:first-child {
       bottom: 15%;
-      left: -40%;
+      left: -38%;
       white-space: nowrap;
     }
 
     p:last-child {
       bottom: 8%;
-      left: -26%;
+      left: -24%;
       white-space: nowrap;
     }
   }
@@ -198,7 +228,7 @@ body {
       background: $primary-background-color;
       font-family: $content-font-family;
       line-height: 1.38em;
-      padding: 7em 3em;
+      padding: 7em 6em;
       z-index: 4;
       background: $primary-background-color;
       width: 100%;
@@ -226,8 +256,9 @@ body {
       p {
         text-align: justify;
         letter-spacing: .1em;
-        line-height: 1.8em;
+        line-height: 2em;
         font-size: .9em;
+        color: #555;
       }
     }
 
@@ -294,8 +325,15 @@ body {
         min-height: 450px;
 
         p {
-          line-height: 1.4em;
+          line-height: 1.8em;
           font-size: .9em;
+          color: #555;
+
+          a{
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+          }
         }
       }
     }
