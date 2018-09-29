@@ -6,20 +6,20 @@ nav {
     nav {
       right: 30px; } }
   nav ul {
+    padding-inline-start: 0;
+    padding-left: 0;
+    box-sizing: border-box;
     transform: rotate(270deg);
     transform-origin: right;
     display: flex;
     flex-flow: wrap row;
     width: 85vh;
     justify-content: space-between; }
-    nav ul li:first-child {
-      width: 13%; }
-    nav ul li:not(first-child) {
-      width: 20%; }
     nav ul li {
       flex: auto;
       list-style: none;
-      text-align: center; }
+      text-align: center;
+      width: 20%; }
       nav ul li a {
         text-decoration: none;
         color: black;

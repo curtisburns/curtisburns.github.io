@@ -9,6 +9,9 @@ nav {
   }
 
   ul {
+    padding-inline-start: 0;
+    padding-left: 0;
+    box-sizing: border-box;
     transform: rotate(270deg);
     transform-origin: right;
     display: flex;
@@ -16,21 +19,11 @@ nav {
     width: 85vh;
     justify-content: space-between;
 
-
-
-    li:first-child {
-      width: 13%;
-    }
-
-    li:not(first-child) {
-      width: 20%;
-    }
-
     li {
       flex: auto;
       list-style: none;
       text-align: center;
-
+      width: 20%;
 
       a {
         text-decoration: none;
