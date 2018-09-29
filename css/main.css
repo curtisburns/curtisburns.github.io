@@ -88,9 +88,6 @@ nav {
       @media only screen and (max-width: 650px) and (orientation: Landscape) {
         #header .main-image-bg img {
           min-height: 400px; } }
-      @media only screen and (max-width: 350px) {
-        #header .main-image-bg img {
-          height: 59vh; } }
     #header .main-image-bg .header-text {
       position: absolute;
       top: 33vh;
