@@ -9,11 +9,11 @@
     padding: 0 calc(20px + 3vw);
     background: #A4BAB9;
     width: auto;
-    margin-left: 8vw;
+    margin: 0 10vw 0 8vw;
     padding-bottom: 200px;
     box-shadow: 14px 7px 20px #97979788;
 
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 650px) {
       margin-left: 2vw;
       margin-top: 300px;
     }
@@ -29,12 +29,23 @@
 
       @media only screen and (max-width: 1240px) {
         height: 72.7vh;
+        // min-height: 540px;
       }
 
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 760px) {
+        height: 60vh;
+      }
+
+      @media only screen and (max-width: 650px) {
+        min-height: 380px;
         height: 50vh;
         opacity: 1;
         @include transform(translateY(-10%));
+      }
+
+      @media only screen and (max-width: 350px) {
+        height: 59vh;
+        min-height: 0;
       }
 
     }
@@ -45,6 +56,7 @@
       right: 4%;
       @include transform(translateX(50%));
       width: 220px;
+      min-height: 325px;
       height: 40vh;
 
       @media only screen and (max-width: 1240px) {
@@ -52,9 +64,14 @@
           top: 50%;
       }
 
-      @media only screen and (max-width: 414px) {
-        top: -53%;
+      @media only screen and (max-width: 650px) {
+        top: -300px;
         left: -5%;
+        height: 325px;
+      }
+
+      @media only screen and (max-width: 350px) {
+        left: -15%;
       }
 
       .white-letters {
@@ -100,7 +117,7 @@
         font-weight:  100;
         position: absolute;
         left: -30%;
-        top: 20%;;
+        top: 20%;
         margin: 0;
 
         @media only screen and (max-width: 1240px) {
@@ -134,8 +151,8 @@
             font-size: calc(30px + 1vw);
         }
 
-        @media only screen and (max-width: 414px) {
-          font-size: calc(20px + 1vw);
+        @media only screen and (max-width: 650px) {
+          font-size: calc(15px + 1vw);
           left: 0%;
         }
 
@@ -145,32 +162,38 @@
 
     }
     .graduation {
+      width: 220px;
+      height: 60px;
       position: absolute;
-      bottom: 25%;
-      right: -50%;
+      top: 65%;
+      left: 70vw;
+
+      @media only screen and (max-height: 550px) {
+        top: 40%;
+      }
 
 
       @media only screen and (max-width: 1240px) {
-        bottom: 30%;
-        right: 10%;
+        top: 65%;
+        left: 55vw;
       }
 
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 650px) {
         color: white;
-        bottom: 13%;
-        right: 20%;
+        top: 75%;
+        left: 40%;
       }
 
       .line {
-        width: 6vw;
+        width: 40px;
         height: 1px;
         background: black;
         position: absolute;
         top: 70%;
-        left: 9%;
+        left: 30px;
 
-        @media only screen and (max-width: 415px) {
-          width: 9vw;
+        @media only screen and (max-width: 650px) {
+          width: 40px;
           background: white;
         }
       }
@@ -181,10 +204,10 @@
       }
 
       p.date {
-        padding-left: 8vw;
+        padding-left: 80px;
 
-        @media only screen and (max-width: 415px) {
-          padding-left: 15vw
+        @media only screen and (max-width: 550px) {
+          padding-left: 80px;
         }
       }
     }

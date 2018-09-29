@@ -6,10 +6,10 @@
   padding: 0 20% 0 16%;
 
   @media only screen and (max-width: 1240px) {
-    margin-bottom: 180px;
+    margin-bottom: 220px;
   }
 
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 550px) {
     margin-bottom: 350px;
   }
 
@@ -28,138 +28,86 @@
     }
 
     // Quote
-
-    p {
-      font-size: calc(18px + 1.3vw);
+    .quote-container {
       position: absolute;
-      font-family: $header-font-family;
+      left: 0%;
+      bottom: 0%;
+      transform: translateX(-42%);
 
-      @media only screen and (max-width: 380px) {
-        font-size: calc(14px + 1vw);
+      p {
+        font-size: calc(18px + 1.3vw);
+        white-space: nowrap;
+        font-family: $header-font-family;
+
+        @media only screen and (max-width: 450px) {
+          font-size: calc(14px + 1vw);
+
+        }
 
       }
+
+      p:last-child {
+        text-indent: 2em;
+      }
+
 
     }
-
-
-    p:first-child {
-      bottom: 15%;
-      left: -38%;
-      white-space: nowrap;
-
-      @media only screen and (max-width: 1240px) {
-        bottom: 10%;
-        left: -43%;
-      }
-
-      @media only screen and (max-width: 415px) {
-        bottom: 13%;
-        left: -80%;
-      }
-
-      @media only screen and (max-width: 380px) {
-        left: -66%;
-      }
-
-      @media only screen and (max-width: 350px) {
-        left: -77%;
-      }
-
-      @media only screen and (min-width: 1580px) {
-          left: -34%;
-      }
-      @media only screen and (min-width: 1780px) {
-          left: -31%;
-      }
-      @media only screen and (min-width: 2100px) {
-          left: -30%;
-      }
-    }
-
-    p:last-child {
-      bottom: 8%;
-      left: -24%;
-      white-space: nowrap;
-
-      @media only screen and (max-width: 1240px) {
-        left: -28%;
-        bottom: 4%;
-      }
-
-      @media only screen and (max-width: 415px) {
-        bottom: 10%;
-        left: -51%;
-      }
-
-      @media only screen and (max-width: 380px) {
-        left: -43%;
-      }
-
-      @media only screen and (max-width: 350px) {
-        left: -48%;
-      }
-
-      @media only screen and (min-width: 1580px) {
-          left: -22%;
-      }
-      @media only screen and (min-width: 1780px) {
-          left: -20%;
-      }
-      @media only screen and (min-width: 2100px) {
-          left: -19%;
-      }
-    }
-
 
   }
 
-    .about-panel {
-      box-sizing: border-box;
+  .about-panel {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background: $primary-background-color;
+    font-family: $content-font-family;
+    line-height: 1.38em;
+    padding: 7em 6em;
+    z-index: 4;
+    background: $primary-background-color;
+    width: 100%;
+    box-shadow: 14px 10px 20px #97979788;
+
+    @media only screen and (max-width: 850px) {
+      padding: 2em 2em;
+    }
+
+    @media only screen and (max-width: 550px) {
+      padding: 2em .3em;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: .3em;
+      font-weight: 100;
+      font-size: calc(12px + .5vw);
+      text-align: center;
       position: relative;
-      z-index: 2;
-      background: $primary-background-color;
-      font-family: $content-font-family;
-      line-height: 1.38em;
-      padding: 7em 6em;
-      z-index: 4;
-      background: $primary-background-color;
-      width: 100%;
-      box-shadow: 14px 10px 20px #97979788;
+      margin-bottom: 2em;
 
-      @media only screen and (max-width: 415px) {
-        padding: 2em .3em;
+      .line {
+        width: 16vw;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 50%;
       }
 
-      h2 {
-        text-transform: uppercase;
-        letter-spacing: .3em;
-        font-weight: 100;
-        font-size: calc(12px + .5vw);
-        text-align: center;
-        position: relative;
-        margin-bottom: 2em;
+    }
 
-        .line {
-          width: 16vw;
-          height: 1px;
-          background: black;
-          position: absolute;
-          top: 50%;
-        }
-
-      }
-
-      p {
-        text-align: justify;
-        letter-spacing: .1em;
-        line-height: 2em;
-        font-size: calc(8px + .5vw);
-        color: #555;
-        @media only screen and (max-width: 415px) {
-          padding: 2em 2em;
-          font-size: calc(10px + .8vw);
-        }
+    p {
+      text-align: justify;
+      letter-spacing: .1em;
+      line-height: 2em;
+      font-size: calc(8px + .5vw);
+      color: #555;
+      @media only screen and (max-width: 650px) {
+        padding: 2em 2em;
+        font-size: calc(8px + .6vw);
       }
     }
+  }
+
+
 
 }

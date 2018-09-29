@@ -5,7 +5,7 @@
   padding: 15px 30% 0 20%;
   font-family: $content-font-family;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     padding: 15px 23% 0 16%;
   }
 
@@ -37,6 +37,8 @@
     display: flex;
     flex-flow: row wrap;
 
+
+
     .line {
       width: 22vh;
       height: 1px;
@@ -53,7 +55,7 @@
         width: 12vh;
       }
 
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 750px) {
         display: none;
       }
     }
@@ -63,7 +65,7 @@
       margin: 0;
       margin-top: 10px;
       font-size: 1.2vw;
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 750px) {
         font-size: calc( 1em + .8vw);
       }
     }
@@ -71,7 +73,8 @@
     .technologies-column {
       flex: auto;
       min-width: 250px;
-      @media only screen and (max-width: 768px) {
+
+      @media only screen and (max-width: 1000px) {
           min-width: 220px;
       }
 
@@ -86,7 +89,7 @@
         @include transform(translate(30%, -10%));
         background: white;
 
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 750px) {
           width: 100%;
           @include transform(translate(0%, 0%));
         }
@@ -102,7 +105,7 @@
             margin: 8px 0;
             list-style: none;
             font-size: calc(.2em + .8vw);
-            @media only screen and (max-width: 415px) {
+            @media only screen and (max-width: 750px) {
               font-size: calc( .8em + .8vw);
             }
           }
@@ -116,8 +119,9 @@
       min-width: 250px;
       flex: auto;
       position: relative;
-      @media only screen and (max-width: 768px) {
-          min-width: 220px;
+
+      @media only screen and (max-width: 1000px) {
+          min-width: 235px;
       }
 
       .methodology-panel {
@@ -130,7 +134,7 @@
         @include transform(translateX(-10%));
         padding: 30px 0;
 
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 750px) {
           width: 100%;
           @include transform(translate(0%, 0%));
         }
@@ -148,7 +152,7 @@
             list-style: none;
             font-size: calc(.3em + .8vw);
             margin-top: 0;
-            @media only screen and (max-width: 415px) {
+            @media only screen and (max-width: 750px) {
               font-size: calc( .8em + .8vw);
             }
           }

@@ -116,7 +116,6 @@
         z-index: 1;
 
         @media only screen and (max-width: 1240px) {
-          margin: 20px;
         }
 
         .text-panel {
@@ -130,18 +129,19 @@
 
           @media only screen and (max-width: 1240px) {
             width: 70vw;
-            font-size: 2vw;
+            font-size: calc(8px + .5vw);
             padding: 3em;
+            margin: 30px auto;
           }
 
           p {
             line-height: 1.8em;
-            font-size: .9em;
             color: #555;
 
-            @media only screen and (max-width: 415px) {
+            @media only screen and (max-width: 550px) {
               font-size: 4vw;
             }
+
 
             a{
               text-decoration: none;

@@ -55,10 +55,10 @@ nav {
     padding: 0 calc(20px + 3vw);
     background: #A4BAB9;
     width: auto;
-    margin-left: 8vw;
+    margin: 0 10vw 0 8vw;
     padding-bottom: 200px;
     box-shadow: 14px 7px 20px #97979788; }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 650px) {
       #header .main-image-bg {
         margin-left: 2vw;
         margin-top: 300px; } }
@@ -72,14 +72,22 @@ nav {
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg img {
           height: 72.7vh; } }
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 760px) {
         #header .main-image-bg img {
+          height: 60vh; } }
+      @media only screen and (max-width: 650px) {
+        #header .main-image-bg img {
+          min-height: 380px;
           height: 50vh;
           opacity: 1;
           -webkit-transform: translateY(-10%);
           -ms-transform: translateY(-10%);
           -moz-transform: translateY(-10%);
           transform: translateY(-10%); } }
+      @media only screen and (max-width: 350px) {
+        #header .main-image-bg img {
+          height: 59vh;
+          min-height: 0; } }
     #header .main-image-bg .header-text {
       position: absolute;
       top: 33vh;
@@ -89,15 +97,20 @@ nav {
       -moz-transform: translateX(50%);
       transform: translateX(50%);
       width: 220px;
+      min-height: 325px;
       height: 40vh; }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg .header-text {
           left: 0;
           top: 50%; } }
-      @media only screen and (max-width: 414px) {
+      @media only screen and (max-width: 650px) {
         #header .main-image-bg .header-text {
-          top: -53%;
-          left: -5%; } }
+          top: -300px;
+          left: -5%;
+          height: 325px; } }
+      @media only screen and (max-width: 350px) {
+        #header .main-image-bg .header-text {
+          left: -15%; } }
       #header .main-image-bg .header-text .white-letters {
         color: white; }
         @media only screen and (max-width: 1240px) {
@@ -162,43 +175,48 @@ nav {
         @media only screen and (max-width: 1240px) {
           #header .main-image-bg .header-text h3 {
             font-size: calc(30px + 1vw); } }
-        @media only screen and (max-width: 414px) {
+        @media only screen and (max-width: 650px) {
           #header .main-image-bg .header-text h3 {
-            font-size: calc(20px + 1vw);
+            font-size: calc(15px + 1vw);
             left: 0%; } }
     #header .main-image-bg .graduation {
+      width: 220px;
+      height: 60px;
       position: absolute;
-      bottom: 25%;
-      right: -50%; }
+      top: 65%;
+      left: 70vw; }
+      @media only screen and (max-height: 550px) {
+        #header .main-image-bg .graduation {
+          top: 40%; } }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg .graduation {
-          bottom: 30%;
-          right: 10%; } }
-      @media only screen and (max-width: 415px) {
+          top: 65%;
+          left: 55vw; } }
+      @media only screen and (max-width: 650px) {
         #header .main-image-bg .graduation {
           color: white;
-          bottom: 13%;
-          right: 20%; } }
+          top: 75%;
+          left: 40%; } }
       #header .main-image-bg .graduation .line {
-        width: 6vw;
+        width: 40px;
         height: 1px;
         background: black;
         position: absolute;
         top: 70%;
-        left: 9%; }
-        @media only screen and (max-width: 415px) {
+        left: 30px; }
+        @media only screen and (max-width: 650px) {
           #header .main-image-bg .graduation .line {
-            width: 9vw;
+            width: 40px;
             background: white; } }
       #header .main-image-bg .graduation p {
         font-family: "Raleway";
         letter-spacing: .3em;
         font-size: .7em; }
       #header .main-image-bg .graduation p.date {
-        padding-left: 8vw; }
-        @media only screen and (max-width: 415px) {
+        padding-left: 80px; }
+        @media only screen and (max-width: 550px) {
           #header .main-image-bg .graduation p.date {
-            padding-left: 15vw; } }
+            padding-left: 80px; } }
 
 #contact {
   height: auto;
@@ -246,7 +264,7 @@ nav {
       @media only screen and (max-width: 1240px) {
         #contact .contact-panel .line-2 {
           right: 4%; } }
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 550px) {
         #contact .contact-panel .line-2 {
           width: 20%;
           right: -1%; } }
@@ -266,7 +284,7 @@ nav {
         @media only screen and (max-width: 1240px) {
           #contact .contact-panel .contact-info .linkedIn {
             margin-top: 3em; } }
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 550px) {
           #contact .contact-panel .contact-info .linkedIn {
             margin-top: 10em;
             text-align: center;
@@ -280,7 +298,7 @@ nav {
         display: block;
         padding-left: 5vw;
         margin-bottom: 3em; }
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 550px) {
           #contact .contact-panel .contact-info .email {
             margin-top: 8em;
             text-align: center;
@@ -306,8 +324,8 @@ nav {
   padding: 0 20% 0 16%; }
   @media only screen and (max-width: 1240px) {
     #about {
-      margin-bottom: 180px; } }
-  @media only screen and (max-width: 415px) {
+      margin-bottom: 220px; } }
+  @media only screen and (max-width: 550px) {
     #about {
       margin-bottom: 350px; } }
   #about .about-bg {
@@ -322,67 +340,20 @@ nav {
       #about .about-bg {
         height: 140%;
         top: -10%; } }
-    #about .about-bg p {
-      font-size: calc(18px + 1.3vw);
+    #about .about-bg .quote-container {
       position: absolute;
-      font-family: "Cormorant Garamond", serif; }
-      @media only screen and (max-width: 380px) {
-        #about .about-bg p {
-          font-size: calc(14px + 1vw); } }
-    #about .about-bg p:first-child {
-      bottom: 15%;
-      left: -38%;
-      white-space: nowrap; }
-      @media only screen and (max-width: 1240px) {
-        #about .about-bg p:first-child {
-          bottom: 10%;
-          left: -43%; } }
-      @media only screen and (max-width: 415px) {
-        #about .about-bg p:first-child {
-          bottom: 13%;
-          left: -80%; } }
-      @media only screen and (max-width: 380px) {
-        #about .about-bg p:first-child {
-          left: -66%; } }
-      @media only screen and (max-width: 350px) {
-        #about .about-bg p:first-child {
-          left: -77%; } }
-      @media only screen and (min-width: 1580px) {
-        #about .about-bg p:first-child {
-          left: -34%; } }
-      @media only screen and (min-width: 1780px) {
-        #about .about-bg p:first-child {
-          left: -31%; } }
-      @media only screen and (min-width: 2100px) {
-        #about .about-bg p:first-child {
-          left: -30%; } }
-    #about .about-bg p:last-child {
-      bottom: 8%;
-      left: -24%;
-      white-space: nowrap; }
-      @media only screen and (max-width: 1240px) {
-        #about .about-bg p:last-child {
-          left: -28%;
-          bottom: 4%; } }
-      @media only screen and (max-width: 415px) {
-        #about .about-bg p:last-child {
-          bottom: 10%;
-          left: -51%; } }
-      @media only screen and (max-width: 380px) {
-        #about .about-bg p:last-child {
-          left: -43%; } }
-      @media only screen and (max-width: 350px) {
-        #about .about-bg p:last-child {
-          left: -48%; } }
-      @media only screen and (min-width: 1580px) {
-        #about .about-bg p:last-child {
-          left: -22%; } }
-      @media only screen and (min-width: 1780px) {
-        #about .about-bg p:last-child {
-          left: -20%; } }
-      @media only screen and (min-width: 2100px) {
-        #about .about-bg p:last-child {
-          left: -19%; } }
+      left: 0%;
+      bottom: 0%;
+      transform: translateX(-42%); }
+      #about .about-bg .quote-container p {
+        font-size: calc(18px + 1.3vw);
+        white-space: nowrap;
+        font-family: "Cormorant Garamond", serif; }
+        @media only screen and (max-width: 450px) {
+          #about .about-bg .quote-container p {
+            font-size: calc(14px + 1vw); } }
+      #about .about-bg .quote-container p:last-child {
+        text-indent: 2em; }
   #about .about-panel {
     box-sizing: border-box;
     position: relative;
@@ -395,7 +366,10 @@ nav {
     background: #FFF;
     width: 100%;
     box-shadow: 14px 10px 20px #97979788; }
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 850px) {
+      #about .about-panel {
+        padding: 2em 2em; } }
+    @media only screen and (max-width: 550px) {
       #about .about-panel {
         padding: 2em .3em; } }
     #about .about-panel h2 {
@@ -418,10 +392,10 @@ nav {
       line-height: 2em;
       font-size: calc(8px + .5vw);
       color: #555; }
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 650px) {
         #about .about-panel p {
           padding: 2em 2em;
-          font-size: calc(10px + .8vw); } }
+          font-size: calc(8px + .6vw); } }
 
 #projects {
   height: auto;
@@ -508,9 +482,6 @@ nav {
       width: calc(250px + 20%);
       position: relative;
       z-index: 1; }
-      @media only screen and (max-width: 1240px) {
-        #projects .project-styling-1 .columns-container .text-column, #projects .project-styling-2 .columns-container .text-column {
-          margin: 20px; } }
       #projects .project-styling-1 .columns-container .text-column .text-panel, #projects .project-styling-2 .columns-container .text-column .text-panel {
         box-sizing: border-box;
         box-shadow: 14px 12px 20px #97979788;
@@ -525,13 +496,13 @@ nav {
         @media only screen and (max-width: 1240px) {
           #projects .project-styling-1 .columns-container .text-column .text-panel, #projects .project-styling-2 .columns-container .text-column .text-panel {
             width: 70vw;
-            font-size: 2vw;
-            padding: 3em; } }
+            font-size: calc(8px + .5vw);
+            padding: 3em;
+            margin: 30px auto; } }
         #projects .project-styling-1 .columns-container .text-column .text-panel p, #projects .project-styling-2 .columns-container .text-column .text-panel p {
           line-height: 1.8em;
-          font-size: .9em;
           color: #555; }
-          @media only screen and (max-width: 415px) {
+          @media only screen and (max-width: 550px) {
             #projects .project-styling-1 .columns-container .text-column .text-panel p, #projects .project-styling-2 .columns-container .text-column .text-panel p {
               font-size: 4vw; } }
           #projects .project-styling-1 .columns-container .text-column .text-panel p a, #projects .project-styling-2 .columns-container .text-column .text-panel p a {
@@ -647,7 +618,7 @@ nav {
   position: relative;
   padding: 15px 30% 0 20%;
   font-family: "Raleway"; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     #skills {
       padding: 15px 23% 0 16%; } }
   #skills h2 {
@@ -689,20 +660,20 @@ nav {
         #skills .skills-columns .line {
           left: 28%;
           width: 12vh; } }
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 750px) {
         #skills .skills-columns .line {
           display: none; } }
     #skills .skills-columns h3 {
       margin: 0;
       margin-top: 10px;
       font-size: 1.2vw; }
-      @media only screen and (max-width: 415px) {
+      @media only screen and (max-width: 750px) {
         #skills .skills-columns h3 {
           font-size: calc( 1em + .8vw); } }
     #skills .skills-columns .technologies-column {
       flex: auto;
       min-width: 250px; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1000px) {
         #skills .skills-columns .technologies-column {
           min-width: 220px; } }
       #skills .skills-columns .technologies-column .technologies-panel {
@@ -718,7 +689,7 @@ nav {
         -moz-transform: translate(30%, -10%);
         transform: translate(30%, -10%);
         background: white; }
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 750px) {
           #skills .skills-columns .technologies-column .technologies-panel {
             width: 100%;
             -webkit-transform: translate(0%, 0%);
@@ -735,16 +706,16 @@ nav {
             margin: 8px 0;
             list-style: none;
             font-size: calc(.2em + .8vw); }
-            @media only screen and (max-width: 415px) {
+            @media only screen and (max-width: 750px) {
               #skills .skills-columns .technologies-column .technologies-panel ul li {
                 font-size: calc( .8em + .8vw); } }
     #skills .skills-columns .methodology-column {
       min-width: 250px;
       flex: auto;
       position: relative; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1000px) {
         #skills .skills-columns .methodology-column {
-          min-width: 220px; } }
+          min-width: 235px; } }
       #skills .skills-columns .methodology-column .methodology-panel {
         text-align: center;
         width: 80%;
@@ -757,7 +728,7 @@ nav {
         -moz-transform: translateX(-10%);
         transform: translateX(-10%);
         padding: 30px 0; }
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 750px) {
           #skills .skills-columns .methodology-column .methodology-panel {
             width: 100%;
             -webkit-transform: translate(0%, 0%);
@@ -776,7 +747,7 @@ nav {
             list-style: none;
             font-size: calc(.3em + .8vw);
             margin-top: 0; }
-            @media only screen and (max-width: 415px) {
+            @media only screen and (max-width: 750px) {
               #skills .skills-columns .methodology-column .methodology-panel ul li {
                 font-size: calc( .8em + .8vw); } }
         #skills .skills-columns .methodology-column .methodology-panel h3 {
