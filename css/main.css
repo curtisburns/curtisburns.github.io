@@ -71,23 +71,26 @@ nav {
       box-shadow: 14px 7px 20px #97979788; }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg img {
-          height: 72.7vh; } }
+          height: 72.7vh;
+          min-height: 540px; } }
       @media only screen and (max-width: 760px) {
         #header .main-image-bg img {
           height: 60vh; } }
       @media only screen and (max-width: 650px) {
         #header .main-image-bg img {
-          min-height: 380px;
           height: 50vh;
+          min-height: 0;
           opacity: 1;
           -webkit-transform: translateY(-10%);
           -ms-transform: translateY(-10%);
           -moz-transform: translateY(-10%);
           transform: translateY(-10%); } }
+      @media only screen and (max-width: 650px) and (orientation: Landscape) {
+        #header .main-image-bg img {
+          min-height: 400px; } }
       @media only screen and (max-width: 350px) {
         #header .main-image-bg img {
-          height: 59vh;
-          min-height: 0; } }
+          height: 59vh; } }
     #header .main-image-bg .header-text {
       position: absolute;
       top: 33vh;
@@ -183,20 +186,29 @@ nav {
       width: 220px;
       height: 60px;
       position: absolute;
-      top: 65%;
-      left: 70vw; }
-      @media only screen and (max-height: 550px) {
-        #header .main-image-bg .graduation {
-          top: 40%; } }
+      -webkit-transform: translate(55vw, -150%);
+      -ms-transform: translate(55vw, -150%);
+      -moz-transform: translate(55vw, -150%);
+      transform: translate(55vw, -150%); }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg .graduation {
-          top: 65%;
-          left: 55vw; } }
+          -webkit-transform: translate(40vw, -236%);
+          -ms-transform: translate(40vw, -236%);
+          -moz-transform: translate(40vw, -236%);
+          transform: translate(40vw, -236%); } }
+      @media only screen and (max-width: 760px) {
+        #header .main-image-bg .graduation {
+          -webkit-transform: translate(40vw, -200%);
+          -ms-transform: translate(40vw, -200%);
+          -moz-transform: translate(40vw, -200%);
+          transform: translate(40vw, -200%); } }
       @media only screen and (max-width: 650px) {
         #header .main-image-bg .graduation {
           color: white;
-          top: 75%;
-          left: 40%; } }
+          -webkit-transform: translate(20%, -40%);
+          -ms-transform: translate(20%, -40%);
+          -moz-transform: translate(20%, -40%);
+          transform: translate(20%, -40%); } }
       #header .main-image-bg .graduation .line {
         width: 40px;
         height: 1px;
