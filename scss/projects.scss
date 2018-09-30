@@ -34,7 +34,7 @@
         height: auto;
         display: inline-block;
         flex: auto;
-        width: calc(300px + 20%);
+        width: calc(306px + 20%);
         position: relative;
         z-index: 2;
 
@@ -67,7 +67,7 @@
           transition: all 1s;
           visibility: hidden;
           box-sizing: border-box;
-          padding-top: 30%;
+          padding: 7%;
           width: 110%;
           height: 99.5%;
           background: #00000085;
@@ -75,35 +75,27 @@
           top: 0;
           text-align: center;
 
-          @media only screen and (max-width: 415px) {
-            padding: 0 10%;
-            padding-top: 20%;
-          }
-
           @media only screen and (max-width: 1240px) {
+            padding: 15%;
             width: 100%;
             opacity: 1;
             visibility: visible;
+          }
+
+          @media only screen and (max-width: 340px) {
+            padding: 5%;
           }
 
           p, h3 {
             color: white;
             font-family: $content-font-family;
             letter-spacing: .3em;
+            font-size: calc(10px + 2vw);
           }
 
           h3 {
             text-transform: uppercase;
             margin-bottom: 12%;
-          }
-
-          .line {
-            width: 30%;
-            height: 1px;
-            background: white;
-            position: absolute;
-            top: 48%;
-            left: 34%;
           }
         }
       }
@@ -111,7 +103,7 @@
         height: auto;
         display: inline-block;
         flex: auto;
-        width: calc(250px + 20%);
+        width: calc(245px + 20%);
         position: relative;
         z-index: 1;
 

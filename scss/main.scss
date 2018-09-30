@@ -19,7 +19,9 @@ $content-letter-spacing: .3em;
 @import "./projects";
 @import "./skills";
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {

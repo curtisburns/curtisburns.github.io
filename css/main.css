@@ -25,7 +25,12 @@ nav {
         color: black;
         font-family: "Raleway";
         text-transform: uppercase;
-        font-size: calc(8px + .8vh); }
+        font-size: calc(8px + .8vh);
+        padding: 0 5px; }
+      nav ul li a.active {
+        color: white;
+        background: black;
+        transition: all .5s; }
     nav ul .black-box {
       background: black;
       height: 10px;
@@ -435,7 +440,7 @@ nav {
       height: auto;
       display: inline-block;
       flex: auto;
-      width: calc(300px + 20%);
+      width: calc(306px + 20%);
       position: relative;
       z-index: 2; }
       #projects .project-styling-1 .columns-container .image-column img, #projects .project-styling-2 .columns-container .image-column img {
@@ -457,41 +462,35 @@ nav {
         transition: all 1s;
         visibility: hidden;
         box-sizing: border-box;
-        padding-top: 30%;
+        padding: 7%;
         width: 110%;
         height: 99.5%;
         background: #00000085;
         position: absolute;
         top: 0;
         text-align: center; }
-        @media only screen and (max-width: 415px) {
-          #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
-            padding: 0 10%;
-            padding-top: 20%; } }
         @media only screen and (max-width: 1240px) {
           #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
+            padding: 15%;
             width: 100%;
             opacity: 1;
             visibility: visible; } }
+        @media only screen and (max-width: 340px) {
+          #projects .project-styling-1 .columns-container .image-column .overlay, #projects .project-styling-2 .columns-container .image-column .overlay {
+            padding: 5%; } }
         #projects .project-styling-1 .columns-container .image-column .overlay p, #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay p, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           color: white;
           font-family: "Raleway";
-          letter-spacing: .3em; }
+          letter-spacing: .3em;
+          font-size: calc(10px + 2vw); }
         #projects .project-styling-1 .columns-container .image-column .overlay h3, #projects .project-styling-2 .columns-container .image-column .overlay h3 {
           text-transform: uppercase;
           margin-bottom: 12%; }
-        #projects .project-styling-1 .columns-container .image-column .overlay .line, #projects .project-styling-2 .columns-container .image-column .overlay .line {
-          width: 30%;
-          height: 1px;
-          background: white;
-          position: absolute;
-          top: 48%;
-          left: 34%; }
     #projects .project-styling-1 .columns-container .text-column, #projects .project-styling-2 .columns-container .text-column {
       height: auto;
       display: inline-block;
       flex: auto;
-      width: calc(250px + 20%);
+      width: calc(245px + 20%);
       position: relative;
       z-index: 1; }
       #projects .project-styling-1 .columns-container .text-column .text-panel, #projects .project-styling-2 .columns-container .text-column .text-panel {
@@ -764,6 +763,9 @@ nav {
                 font-size: calc( .8em + .8vw); } }
         #skills .skills-columns .methodology-column .methodology-panel h3 {
           color: white; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   background: #FFF;
