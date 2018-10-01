@@ -194,12 +194,6 @@ nav {
       transform: translate(55vw, -150%); }
       @media only screen and (max-width: 1240px) {
         #header .main-image-bg .graduation {
-          -webkit-transform: translate(40vw, -236%);
-          -ms-transform: translate(40vw, -236%);
-          -moz-transform: translate(40vw, -236%);
-          transform: translate(40vw, -236%); } }
-      @media only screen and (max-width: 760px) {
-        #header .main-image-bg .graduation {
           -webkit-transform: translate(40vw, -200%);
           -ms-transform: translate(40vw, -200%);
           -moz-transform: translate(40vw, -200%);

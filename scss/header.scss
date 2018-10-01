@@ -173,10 +173,6 @@
       //
       //
       @media only screen and (max-width: 1240px) {
-      @include transform(translate(40vw, -236%));
-      }
-
-      @media only screen and (max-width: 760px) {
       @include transform(translate(40vw, -200%));
       }
 
