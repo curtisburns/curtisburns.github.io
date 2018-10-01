@@ -13,7 +13,7 @@ nav {
     transform-origin: right;
     display: flex;
     flex-flow: wrap row;
-    width: 85vh;
+    width: 90vh;
     justify-content: space-between; }
     nav ul li {
       flex: auto;
@@ -293,8 +293,24 @@ nav {
         padding-right: 5vw;
         margin-top: 2em;
         margin-bottom: 4em; }
+        #contact .contact-panel .contact-info .linkedIn .linkedIn-hover {
+          padding: 0 8px;
+          display: inline-block;
+          border-radius: 2px;
+          height: 25px;
+          width: auto;
+          transition: all .6s; }
+        #contact .contact-panel .contact-info .linkedIn .linkedIn-hover:hover {
+          background: black;
+          z-index: 0; }
+          #contact .contact-panel .contact-info .linkedIn .linkedIn-hover:hover a {
+            color: white;
+            transition: all .4s; }
         #contact .contact-panel .contact-info .linkedIn img {
           width: 25px; }
+        #contact .contact-panel .contact-info .linkedIn a {
+          color: black;
+          transition: all .4s; }
         @media only screen and (max-width: 1240px) {
           #contact .contact-panel .contact-info .linkedIn {
             margin-top: 3em; } }
@@ -305,9 +321,11 @@ nav {
             padding-right: 0; }
             #contact .contact-panel .contact-info .linkedIn img {
               position: absolute;
-              top: -50%;
-              left: 45%;
-              width: 35px; } }
+              top: -40%;
+              left: 42%;
+              width: 35px; }
+            #contact .contact-panel .contact-info .linkedIn a {
+              line-height: 3em; } }
       #contact .contact-panel .contact-info .email {
         display: block;
         padding-left: 5vw;
@@ -320,11 +338,27 @@ nav {
             #contact .contact-panel .contact-info .email img {
               position: absolute;
               top: 40%;
-              left: 45%;
-              width: 35px; } }
+              left: 42%;
+              width: 35px; }
+            #contact .contact-panel .contact-info .email a {
+              line-height: 3em; } }
+      #contact .contact-panel .contact-info .email-hover {
+        display: inline-block;
+        height: 25px;
+        padding: 0 8px;
+        width: auto;
+        transition: all .6s;
+        border-radius: 12.5px; }
+      #contact .contact-panel .contact-info .email-hover:hover {
+        background: black;
+        z-index: 0; }
+        #contact .contact-panel .contact-info .email-hover:hover a {
+          color: white;
+          transition: all .4s; }
       #contact .contact-panel .contact-info a {
         text-decoration: none;
-        color: black; }
+        color: black;
+        transition: all .4s; }
         #contact .contact-panel .contact-info a img {
           width: 25px;
           vertical-align: middle;

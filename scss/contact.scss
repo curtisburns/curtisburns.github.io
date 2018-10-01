@@ -64,6 +64,9 @@
       width: 100%;
       position: relative;
 
+
+
+
       .linkedIn {
         display: block;
         text-align: right;
@@ -71,8 +74,34 @@
         margin-top: 2em;
         margin-bottom: 4em;
 
+        .linkedIn-hover {
+          padding: 0 8px;
+
+          display: inline-block;
+          border-radius: 2px;
+          height: 25px;
+          width: auto;
+          transition: all .6s;
+        }
+
+        .linkedIn-hover:hover {
+
+          background: black;
+          z-index: 0;
+
+          a {
+            color: white;
+            transition: all .4s;
+          }
+        }
+
         img {
           width: 25px;
+        }
+
+        a {
+          color: black;
+          transition: all .4s;
         }
 
         @media only screen and (max-width: 1240px) {
@@ -86,11 +115,14 @@
 
           img {
             position: absolute;
-            top: -50%;
-            left: 45%;
+            top: -40%;
+            left: 42%;
             width: 35px;
           }
 
+          a {
+            line-height:3em;
+          }
         }
       }
 
@@ -98,6 +130,8 @@
         display: block;
         padding-left: 5vw;
         margin-bottom: 3em;
+
+
 
         @media only screen and (max-width: 550px) {
           margin-top: 8em;
@@ -107,16 +141,39 @@
           img {
             position: absolute;
             top: 40%;
-            left: 45%;
+            left: 42%;
             width: 35px;
           }
 
+          a {
+            line-height:3em;
+          }
+        }
+      }
+
+      .email-hover {
+        display: inline-block;
+        height: 25px;
+        padding: 0 8px;
+        width: auto;
+        transition: all .6s;
+        border-radius: 12.5px;
+      }
+
+      .email-hover:hover {
+        background: black;
+        z-index: 0;
+
+        a {
+          color: white;
+          transition:all .4s;
         }
       }
 
       a {
         text-decoration: none;
         color: black;
+        transition: all .4s;
 
         img {
           width: 25px;
@@ -126,5 +183,6 @@
       }
 
     }
+
   }
 }
