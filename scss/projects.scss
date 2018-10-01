@@ -4,7 +4,6 @@
   padding: 100px 16% 0 10%;
   font-family: $content-font-family;
 
-
   h2 {
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -135,10 +134,14 @@
             }
 
 
-            a{
+            a {
               text-decoration: none;
-              color: black;
-              font-weight: 900;
+              color: grey;
+            }
+            a:hover {
+              background: #A4BAB9;
+              border-radius: 5px;
+              color: white;
             }
           }
         }
@@ -278,4 +281,24 @@
       }
     }
   }
+
+  .what-next {
+    text-align: justify;
+    padding: 0 10vw 200px 10vw;
+
+    p {
+      line-height: 1.6em;
+
+      a {
+        text-decoration: none;
+        color: grey;
+      }
+      a:hover {
+        background: #A4BAB9;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+
 }
