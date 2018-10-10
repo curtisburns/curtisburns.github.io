@@ -20,6 +20,12 @@ nav {
       list-style: none;
       text-align: center;
       width: 20%; }
+      nav ul li .project-count {
+        position: absolute;
+        transform: translate(1px, -5px);
+        font-size: calc(8px + .8vh);
+        color: black;
+        font-family: "Raleway"; }
       nav ul li a {
         text-decoration: none;
         color: black;

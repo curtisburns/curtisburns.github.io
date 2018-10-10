@@ -6,6 +6,13 @@ window.onload = () => {
   const aboutNav = document.querySelector('.about-nav');
   const projectsNav = document.querySelector('.projects-nav');
   const skillsNav = document.querySelector('.skills-nav');
+  const projectsNumber = document.querySelectorAll('.project-links').length;
+
+  const projectCount = document.createElement('span');
+  projectCount.setAttribute('class', 'project-count');
+  projectCount.textContent = projectsNumber;
+  projectsNav.parentNode.appendChild(projectCount);
+
 
   const isInView = function(sectionId, nextSectionId) {
     if (nextSectionId) {
@@ -25,24 +32,25 @@ window.onload = () => {
 
     switch(true) {
       case(isInView(about, projects)):
-        console.log('ABOUT is active');
+        // console.log('ABOUT is active');
         aboutNav.classList.add('active');
         projectsNav.classList.remove('active');
         skillsNav.classList.remove('active');
         break;
       case(isInView(projects, skills)):
-        console.log('PROJECTS is active');
+        // console.log('PROJECTS is active');
         aboutNav.classList.remove('active');
         projectsNav.classList.add('active');
         skillsNav.classList.remove('active');
         break;
       case(isInView(skills)):
-        console.log('SKILLS is active');
+        // console.log('SKILLS is active');
         aboutNav.classList.remove('active');
         projectsNav.classList.remove('active');
         skillsNav.classList.add('active');
         break;
-      default: console.log('Nothing is active');
+      default:
+      // console.log('Nothing is active');
         aboutNav.classList.remove('active');
         projectsNav.classList.remove('active');
         skillsNav.classList.remove('active');

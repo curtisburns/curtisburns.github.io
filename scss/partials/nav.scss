@@ -25,6 +25,14 @@ nav {
       text-align: center;
       width: 20%;
 
+      .project-count {
+        position: absolute;
+        transform: translate(1px, -5px);
+        font-size: calc(8px + .8vh);
+        color: black;
+        font-family: $content-font-family;
+      }
+
       a {
         text-decoration: none;
         color: black;
@@ -32,6 +40,7 @@ nav {
         text-transform: uppercase;
         font-size: calc(8px + .8vh);
         padding: 0 5px;
+
       }
 
       a.active {
